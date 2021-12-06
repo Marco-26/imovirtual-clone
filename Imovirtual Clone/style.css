@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #F5F5F5;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 95%;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.brand{
+    color: red;
+}
+
+.container{
+    z-index: 1;
+    width: 40px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.active div:nth-child(2){
+    opacity: 0;
+    transform: translateX(-20px); 
+}
+
+.active div:nth-child(1){
+    transform: rotate(45deg) translate(7.5px, 7.5px);
+}
+
+.active div:nth-child(3){
+    transform: rotate(-45deg) translate(7.5px, -8px);
+}
+
+.menulogo{
+    transition: all .5s ease-in-out;
+    height: 3px;
+    width: 30px;
+    background-color: black;
+}
+
+.menu{
+    position: absolute;
+    top: 0%;
+    right: 0;
+    width: 75%;
+    height: 100vh;
+    background-color: white;
+    padding: 50px;
+    transform: translateX(1440px);
+    transition: all .5s ease-in-out;
+}
+
+.showmenu{
+    transform: translateX(0);
+}
+
+.menu li{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.menu li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Secção de pesquisa  */
+.search__section{
+    background-color: #C33A32;
+    height: 324px;
+}
+
+/* Secção do anúncio destacado */
+
+.highlight__section{
+    height: 380px;
+    margin-top: 40px;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.ad__title{
+    margin-bottom: 20px;
+}
+
+.img__content{
+    position: relative;
+}
+
+.ad__photo{
+    width: 100%;
+    height: 225px;
+    cursor: pointer;
+}
+
+.image__text{
+    color: white;
+    position: absolute;
+    bottom:2%;
+    padding: 5px;
+    text-align: left;
+}
+
+.ad__button{
+    border: none;
+    width: 48%;
+    height: 40px;
+    background-color: #C33A32;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.ad__button:hover{
+    background-color:#d35c55;
+    border: 1px solid #C33A32;
+}
+
+/* Serviços */
+
+.services{
+    margin: 35px auto;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.services__title{
+    text-align: center;
+}
+
+.item{
+    margin: 25px auto;
+}
+
+.circle{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #BBBBBB;
+}
+
+.item__name{
+    color: #8F8F8F;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
