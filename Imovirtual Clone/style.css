@@ -4,13 +4,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: "Helvetica Neue",Arial,sans-serif;
+
+}
+
+html{
+    font-family: sans-serif;
 }
 
 body{
     background-color: #F5F5F5;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     overflow-x: hidden;
     overflow-y:auto;
+}
+ 
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3{
+    font-weight: 500;
+    color: inherit;
 }
 
 .wrapper{
@@ -118,6 +138,7 @@ header{
 }
 
 .ad__photo{
+    object-fit: cover;
     width: 100%;
     height: 225px;
     cursor: pointer;
@@ -146,7 +167,7 @@ header{
     border: 1px solid #C33A32;
 }
 
-/* Serviços */
+/* Secção principal ''Serviços'' */
 
 .services{
     margin: 35px auto;
@@ -185,4 +206,33 @@ header{
 .fas{
     font-size: 50px;
     color: #989898;
+}
+
+/* Secção secundária ''conteúdo dentro dos circulos'' */
+
+.menu-links{
+    display: none;
+}
+
+.circle:hover{
+    background-color: #C33A32;
+}
+
+.circle:hover > .fas{
+    display: none;
+}
+
+.circle:hover > .menu-links{
+    padding: 10px 0;
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+
+.links{
+    padding-top: 10px;
+}
+
+.links:hover{
+    text-decoration: underline 1px white;
 }
