@@ -25,6 +25,7 @@ ul {
 
 a {
   text-decoration: none;
+  color:#666;
 }
 
 h1,
@@ -40,6 +41,11 @@ h2 {
 
 img {
   object-fit: cover;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: white;
 }
 
 .wrapper {
@@ -338,4 +344,47 @@ header {
   .blog__container .item-3{
     display: none;
   }
+}
+
+/* Secção principal ''Footer'' */
+
+.footer-content{
+  padding: 20px 10px;
+}
+
+.footer-content div{
+  padding: 15px 0px;
+}
+
+.footer-content p{
+  font-weight: bold;
+}
+
+.footer-content ul li{
+  padding-top: 10px;
+}
+
+.footer-content ul li a:hover{
+  cursor: pointer;
+  text-decoration: underline 1px solid#666;
+}
+
+.footer-button{
+  display: flex;
+  justify-content: center;
+}
+
+.googleplay img{
+  margin-right: 10px;
+  width: 120px;
+}
+
+.footer-termos{
+  text-align: center;
+  color: #bbb;
+}
+
+.footer-termos span a{
+  color: rgb(73, 73, 73);
+  text-decoration: underline 1px solid rgb(73, 73, 73)k;
 }
