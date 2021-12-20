@@ -384,7 +384,18 @@ header {
   color: #bbb;
 }
 
+.fab{
+  margin-right: 10px;
+  padding-top: 20px;
+  font-size: 35px;
+}
+
+.fa-facebook-square{color: #4267B2;}
+.fa-youtube{color: #FF0000;}
+.fa-instagram-square{color: #C13584;}
+
 .footer-termos span a{
   color: rgb(73, 73, 73);
   text-decoration: underline 1px solid rgb(73, 73, 73)k;
 }
+
