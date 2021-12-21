@@ -106,12 +106,22 @@ header {
   position: absolute;
   top: 0%;
   right: 0;
-  width: 75%;
+  width: 100%;
   height: 100vh;
   background-color: white;
-  padding: 50px;
+  padding: 20px 25px;
   transform: translateX(1440px);
   transition: all 0.5s ease-in-out;
+}
+
+.menu .submenu{
+  display: none;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.menu .open-submenu{
+  display: block;
 }
 
 .showmenu {
@@ -126,8 +136,12 @@ header {
 .menu li a {
   color: black;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
+}
+
+.navbar-button{
+  /* TODO: fazer este botão e dar espaçamento na navbar */
 }
 
 /* Secção de pesquisa  */
@@ -219,7 +233,7 @@ header {
   margin-top: 10px;
 }
 
-.fas {
+.footer-content .fas {
   font-size: 50px;
   color: #989898;
 }
