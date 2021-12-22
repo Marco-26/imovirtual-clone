@@ -73,8 +73,8 @@ header {
 
 .container {
   z-index: 1;
-  width: 40px;
-  height: 25px;
+  width: 20px;
+  height: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -88,18 +88,18 @@ header {
 }
 
 .active div:nth-child(1) {
-  transform: rotate(45deg) translate(7.5px, 7.5px);
+  transform: rotate(45deg) translate(3px, 3px);
 }
 
 .active div:nth-child(3) {
-  transform: rotate(-45deg) translate(7.5px, -8px);
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .menulogo {
   transition: all 0.5s ease-in-out;
-  height: 3px;
-  width: 30px;
-  background-color: black;
+  height: 2px;
+  width: 20px;
+  background-color: rgb(54, 54, 54);
 }
 
 .menu {
@@ -114,13 +114,26 @@ header {
   transition: all 0.5s ease-in-out;
 }
 
+.menu div:not(:nth-child(1)){ /* aplicar margin a todos os elementos div exceto o primeiro*/
+  margin-top: 20px;
+}
+
 .menu .submenu{
   display: none;
   margin-left: 20px;
   margin-top: 10px;
 }
 
-.menu .open-submenu{
+.fa-caret-down{
+  transition: all .3s ease-in-out;
+}
+
+.arrow-up{ /* classe que roda a arrow ao lado do titulo dos menus no hamburguer menu */
+  transform: rotate(-180deg);
+  transition: all .3s ease-in-out;
+}
+
+.menu .open-submenu{ /* classe que abre o submenu no hamburguer menu */
   display: block;
 } 
 
@@ -140,8 +153,16 @@ header {
   text-align: center;
 }
 
+.sign-in li{
+  padding: 20px 0px;
+}
+
+.fa-user{
+  margin-right: 5px;
+}
+
 .navbar-button{
-  margin-top: 10px;
+  margin-top: 20px;
   cursor: pointer;
   background: none;
   border: 1px solid rgb(1, 136, 136);
