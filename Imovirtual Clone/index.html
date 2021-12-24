@@ -12,6 +12,7 @@
     <title>Comprar e arrendar casa | Imovirtual</title>
   </head>
   <body>
+    <section>
       <header>
         <div class="top">
           <img src="img/logo.png" alt="logo" class="brand">
@@ -71,11 +72,48 @@
         </ul>
       </nav>
     </header>
+  </section>  
 
 
     <!-- pesquisa -->
 
-    <section class="search__section"></section>
+    <section class="search__section">
+      <div class="search-content">
+        <div class="form">
+          <div class="btn-group">
+              <button class="active">Pesquisar</button>
+              <button>Empreendimentos</button>
+          </div>
+          <div class="content">
+              <form action="">
+                  <div class="top-buttons">
+                      <select name="tipo">
+                          <option value="">Apartamentos</option>
+                          <option value="">Moradias</option>
+                          <option value="">Quartos</option>
+                          <option value="">Terrenos</option>
+                          <option value="">Lojas</option>
+                          <option value="">Armazéns</option>
+                          <option value="">Garagens</option>
+                          <option value="">Escritórios</option>
+                      </select>
+                      <select name="compra">
+                          <option value="">Para comprar</option>
+                          <option value="">Para arrendar</option>
+                          <option value="">Para férias</option>
+                      </select>
+                  </div>
+                    
+                <div class="input">
+                    <input type="text" placeholder="Procure por uma localização" class="search-location">
+                </div>
+                
+                <button class="more-opt">Mais Opções</button>                 
+                <button class="search">Pesquisar</button>
+            </form>
+        </div>
+      </div>
+    </section>
 
     <!-- add -->
     <div class="wrapper">

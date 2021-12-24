@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+:root {
+  --border-button: rgb(189, 189, 189);
+  --text-color: rgb(97, 97, 97);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Roboto', sans-serif; */
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -177,7 +181,83 @@ header {
 /* Secção de pesquisa  */
 .search__section {
   background-color: #c33a32;
-  height: 324px;
+  height: auto;
+  padding-top: 62px; /* altura da navigation bar*/
+}
+
+.search-content{
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+  width: 97%;
+}
+
+.btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: none;
+  color: white; /* White text */
+  padding: 13px 10px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  width: 130px;
+  margin-right: 0;
+}
+.content{
+  background-color: white;
+  padding: 20px 10px;
+  margin-top: 43px;
+}
+
+.active{
+  background-color: white;
+  font-weight: bold;
+  color: royalblue;
+}
+
+.top-buttons{
+  width: 100%;
+}
+
+.top-buttons select{
+  white-space: nowrap;
+  border: 1px solid var(--border-button);
+  background-color: white;
+  padding: 10px 10px;
+  width: 130px;
+  font-size: 13px;
+  color: var(--text-color);
+}
+
+.top-buttons select:nth-child(2){float: right;}
+
+.search-location{
+  width: 100%;
+  border: 1px solid var(--border-button);
+  padding: 10px 20px;  
+  text-align: center;
+  margin-top: 10px;
+}
+
+.more-opt{
+  background-color: white;
+  border: 1px solid var(--border-button);
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.search{
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+  background-color: royalblue;
+  border: none;
+  color: white;
 }
 
 /* Secção do anúncio destacado */
