@@ -178,6 +178,10 @@ header {
   border-radius: 2px;
 }
 
+.navbar-button:hover{
+  background-color: rgba(1, 136, 136,.1);
+}
+
 /* Secção de pesquisa  */
 .search__section {
   background-color: #c33a32;
@@ -197,25 +201,28 @@ header {
 }
 
 .btn-group button {
-  background-color: #04AA6D; /* Green background */
   border: none;
-  color: white; /* White text */
   padding: 13px 10px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
   width: 130px;
   margin-right: 0;
 }
+
 .content{
   background-color: white;
   padding: 20px 10px;
-  margin-top: 43px;
+  margin-top: 41px;
 }
 
 .active{
   background-color: white;
   font-weight: bold;
-  color: royalblue;
+  color: #25CBD3;
+}
+
+.deactive{
+  background-color: #e0e0e0;
 }
 
 .top-buttons{
@@ -255,15 +262,20 @@ header {
   display: block;
   width: 100%;
   padding: 10px 0px;
-  background-color: royalblue;
+  background-color:#25CBD3;
   border: none;
   color: white;
+  cursor: pointer;
+}
+
+.fa-search{
+  margin-right: 10px;
 }
 
 /* Secção do anúncio destacado */
 
 .highlight__section {
-  height: 380px;
+  height: 360px;
   margin-top: 40px;
   display: block;
   align-items: center;
@@ -310,7 +322,7 @@ header {
 /* Secção principal ''Serviços'' */
 
 .services {
-  margin: 35px auto;
+  margin: 15px auto;
   justify-content: space-between;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -526,4 +538,3 @@ header {
   color: rgb(73, 73, 73);
   text-decoration: underline 1px solid rgb(73, 73, 73)k;
 }
-
