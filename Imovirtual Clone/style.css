@@ -29,7 +29,7 @@ ul {
 
 a {
   text-decoration: none;
-  color:#666;
+  color: #666;
 }
 
 h1,
@@ -118,28 +118,31 @@ header {
   transition: all 0.5s ease-in-out;
 }
 
-.menu div:not(:nth-child(1)){ /* aplicar margin a todos os elementos div exceto o primeiro*/
+.menu div:not(:nth-child(1)) {
+  /* aplicar margin a todos os elementos div exceto o primeiro*/
   margin-top: 20px;
 }
 
-.menu .submenu{
+.menu .submenu {
   display: none;
   margin-left: 20px;
   margin-top: 10px;
 }
 
-.fa-caret-down{
-  transition: all .3s ease-in-out;
+.fa-caret-down {
+  transition: all 0.3s ease-in-out;
 }
 
-.arrow-up{ /* classe que roda a arrow ao lado do titulo dos menus no hamburguer menu */
+.arrow-up {
+  /* classe que roda a arrow ao lado do titulo dos menus no hamburguer menu */
   transform: rotate(-180deg);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.menu .open-submenu{ /* classe que abre o submenu no hamburguer menu */
+.menu .open-submenu {
+  /* classe que abre o submenu no hamburguer menu */
   display: block;
-} 
+}
 
 .showmenu {
   transform: translateX(0);
@@ -157,29 +160,29 @@ header {
   text-align: center;
 }
 
-.sign-in li{
+.sign-in li {
   padding: 20px 0px;
 }
 
-.fa-user{
+.fa-user {
   margin-right: 5px;
 }
 
-.navbar-button{
+.navbar-button {
   margin-top: 20px;
   cursor: pointer;
   background: none;
   border: 1px solid rgb(1, 136, 136);
   text-align: center;
   padding: 10px 40px;
-  color:rgb(1, 136, 136);
+  color: rgb(1, 136, 136);
   font-weight: bold;
   width: 100%;
   border-radius: 2px;
 }
 
-.navbar-button:hover{
-  background-color: rgba(1, 136, 136,.1);
+.navbar-button:hover {
+  background-color: rgba(1, 136, 136, 0.1);
 }
 
 /* Secção de pesquisa  */
@@ -189,14 +192,14 @@ header {
   padding-top: 62px; /* altura da navigation bar*/
 }
 
-.search-content{
+.search-content {
   padding: 20px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.form{
+.form {
   width: 97%;
 }
 
@@ -209,27 +212,27 @@ header {
   margin-right: 0;
 }
 
-.content{
+.content {
   background-color: white;
   padding: 20px 10px;
   margin-top: 41px;
 }
 
-.active{
+.active {
   background-color: white;
   font-weight: bold;
-  color: #25CBD3;
+  color: #25cbd3;
 }
 
-.deactive{
+.deactive {
   background-color: #e0e0e0;
 }
 
-.top-buttons{
+.top-buttons {
   width: 100%;
 }
 
-.top-buttons select{
+.top-buttons select {
   white-space: nowrap;
   border: 1px solid var(--border-button);
   background-color: white;
@@ -237,38 +240,69 @@ header {
   width: 130px;
   font-size: 13px;
   color: var(--text-color);
+  cursor: pointer;
 }
 
-.top-buttons select:nth-child(2){float: right;}
+.top-buttons select:nth-child(2) {
+  float: right;
+}
 
-.search-location{
+.search-location {
   width: 100%;
   border: 1px solid var(--border-button);
-  padding: 10px 20px;  
+  padding: 10px 20px;
   text-align: center;
   margin-top: 10px;
 }
 
-.more-opt{
+.more-opt {
   background-color: white;
   border: 1px solid var(--border-button);
   border-radius: 25px;
-  padding: 10px 20px;
+  padding: 7px 20px;
   margin-top: 20px;
+  color: var(--text-color);
+  cursor: pointer;
 }
 
-.search{
+/* Secção mais opções, ativa quando o botão acima é clicado */
+
+.more-opt-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  background-color: black;
+}
+
+.more-opt-modal-content {
+  padding: 15px 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  color: white;
+}
+
+.modal-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
   margin-top: 20px;
   display: block;
   width: 100%;
   padding: 10px 0px;
-  background-color:#25CBD3;
+  background-color: #25cbd3;
   border: none;
   color: white;
   cursor: pointer;
 }
 
-.fa-search{
+.fa-search {
   margin-right: 10px;
 }
 
@@ -366,7 +400,7 @@ header {
   display: none;
 }
 
-.services .fas{
+.services .fas {
   font-size: 40px;
 }
 
@@ -405,7 +439,6 @@ header {
 .blog__item {
   width: 100%;
   position: relative;
-
 }
 .blog__image {
   width: 100%;
@@ -436,7 +469,7 @@ header {
   border-radius: 5px;
 }
 
-.blog-top-btn{
+.blog-top-btn {
   cursor: pointer;
   background-color: #21a4b8;
   border: none;
@@ -446,7 +479,7 @@ header {
   padding: 5px 10px;
   border-radius: 5px;
   position: absolute;
-  top:10px;
+  top: 10px;
   right: 10px;
 }
 /* show more button */
@@ -467,74 +500,80 @@ header {
   background-color: #d35c55;
 }
 
-.blog__section .button{
+.blog__section .button {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
 
-@media all and (max-width:600px){
-  .blog__container .item-2{
+@media all and (max-width: 600px) {
+  .blog__container .item-2 {
     display: none;
   }
 }
 
-@media all and (max-width:900px){
-  .blog__container .item-3{
+@media all and (max-width: 900px) {
+  .blog__container .item-3 {
     display: none;
   }
 }
 
 /* Secção principal ''Footer'' */
 
-.footer-content{
+.footer-content {
   padding: 20px 10px;
 }
 
-.footer-content div{
+.footer-content div {
   padding: 15px 0px;
 }
 
-.footer-content p{
+.footer-content p {
   font-weight: bold;
 }
 
-.footer-content ul li{
+.footer-content ul li {
   padding-top: 10px;
 }
 
-.footer-content ul li a:hover{
+.footer-content ul li a:hover {
   cursor: pointer;
   text-decoration: underline 1px solid#666;
 }
 
-.footer-button{
+.footer-button {
   display: flex;
   justify-content: center;
 }
 
-.googleplay img{
+.googleplay img {
   margin-right: 10px;
   width: 120px;
 }
 
-.footer-termos{
+.footer-termos {
   text-align: center;
   color: #bbb;
 }
 
-.fab{
+.fab {
   margin-right: 10px;
   padding-top: 20px;
   font-size: 35px;
 }
 
-.fa-facebook-square{color: #4267B2;}
-.fa-youtube{color: #FF0000;}
-.fa-instagram-square{color: #C13584;}
+.fa-facebook-square {
+  color: #4267b2;
+}
+.fa-youtube {
+  color: #ff0000;
+}
+.fa-instagram-square {
+  color: #c13584;
+}
 
-.footer-termos span a{
+.footer-termos span a {
   color: rgb(73, 73, 73);
-  text-decoration: underline 1px solid rgb(73, 73, 73)k;
+  text-decoration: underline 1px solid rgb(73, 73, 73) k;
 }

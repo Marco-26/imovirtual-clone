@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/cef357574f.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Comprar e arrendar casa | Imovirtual</title>
-  </head>
-  <body>
-    <!-- TODO: - Hover effect no botão de pesquisa no formulário -->
-    <section>
-      <header>
-        <div class="top">
-          <img src="img/logo.png" alt="logo" class="brand">
-          <!-- Hamburger logo  -->
-          <div class="container">
-            <div class="menulogo"></div>
-            <div class="menulogo"></div>
-            <div class="menulogo"></div>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/cef357574f.js" crossorigin="anonymous"></script>
+  <title>Comprar e arrendar casa | Imovirtual</title>
+</head>
+
+<body>
+  <!-- TODO: - Hover effect no botão de pesquisa no formulário -->
+  <section>
+    <header>
+      <div class="top">
+        <img src="img/logo.png" alt="logo" class="brand">
+        <!-- Hamburger logo  -->
+        <div class="container">
+          <div class="menulogo"></div>
+          <div class="menulogo"></div>
+          <div class="menulogo"></div>
         </div>
+      </div>
       <!-- Nav bar -->
       <nav class="navbar">
         <ul class="menu">
-          
+
           <div>
             <li><a href="#" class="submenu-parent">Anúncios <i class="fas fa-caret-down"></i></a>
               <ul class="submenu">
@@ -35,328 +34,341 @@
                 <li><a href="/">Para arrendar</a></li>
                 <li><a href="/">Para férias</a></li>
                 <li><a href="/">Empreendimentos</a></li>
-              </ul>           
+              </ul>
             </li>
 
-            <li><a href="#" class="submenu-parent-2">Empreendimentos <i class="fas fa-caret-down fa-caret-down2"></i></a>
+            <li><a href="#" class="submenu-parent-2">Empreendimentos <i
+                  class="fas fa-caret-down fa-caret-down2"></i></a>
               <ul class="submenu submenu-2">
                 <li><a href="/">Ver todos os anúncios</a></li>
                 <li><a href="/">Apartamentos novos</a></li>
                 <li><a href="/">Moradias novas</a></li>
               </ul>
-            </li> 
+            </li>
 
             <li><a href="#" class="submenu-parent-3">Profissionais <i class="fas fa-caret-down fa-caret-down3"></i></a>
               <ul class="submenu submenu-3">
                 <li><a href="/">Agências imobiliárias</a></li>
                 <li><a href="/">Promotores imobiliários</a></li>
               </ul>
-            </li>         
+            </li>
 
             <li><a href="#">Blog</a></li>
             <li><a href="#">A Nossa Campanha</a></li>
-         </div>
+          </div>
 
           <div class="sign-in">
             <hr>
             <li><a href="#"> <i class="fas fa-user"></i> Inicio de sessão</a></li>
             <hr>
           </div>
-         
+
           <div>
             <li><a href="#">Português</a></li>
             <li><a href="#">English</a></li>
           </div>
-          
-          
+
           <button class="navbar-button">Adicionar Anúncio</button>
         </ul>
       </nav>
     </header>
-  </section>  
+  </section>
 
 
-    <!-- pesquisa -->
+  <!-- pesquisa -->
 
-    <section class="search__section">
-      <div class="search-content">
-        <div class="form">
-          <div class="btn-group">
-              <button class="active">Pesquisar</button>
-              <button class="deactive">Empreendimentos</button>
-          </div>
-          <div class="content">
-              <form action="">
-                  <div class="top-buttons">
-                      <select name="tipo">
-                          <option value="">Apartamentos</option>
-                          <option value="">Moradias</option>
-                          <option value="">Quartos</option>
-                          <option value="">Terrenos</option>
-                          <option value="">Lojas</option>
-                          <option value="">Armazéns</option>
-                          <option value="">Garagens</option>
-                          <option value="">Escritórios</option>
-                      </select>
-                      <select name="compra">
-                          <option value="">Para comprar</option>
-                          <option value="">Para arrendar</option>
-                          <option value="">Para férias</option>
-                      </select>
-                  </div>
-                    
-                <div class="input">
-                    <input type="text" placeholder="Procure por uma localização" class="search-location">
-                </div>
-                
-                <button class="more-opt">Mais Opções</button>                 
-                <button class="search"> <i class="fas fa-search"></i>Pesquisar</button>
-            </form>
+  <section class="search__section">
+    <div class="search-content">
+      <div class="form">
+        <div class="btn-group">
+          <button class="active">Pesquisar</button>
+          <button class="deactive">Empreendimentos</button>
         </div>
-      </div>
-    </section>
+        <div class="content">
+          <form action="">
 
-    <!-- add -->
-    <div class="wrapper">
-      <section class="highlight__section">
-        <h1 class="ad__title">Anúncios destacados</h1>
-        <div class="img__content">
-          <img
-            src="img/photo-1580587771525-78b9dba3b914.jfif"
-            alt="photo"
-            class="ad__photo"
-          />
-          <div class="image__text">
-            <h3>500 000€</h3>
-            <p>Rua Alfredo Bastos, Vila do Conde</p>
-            <p>85,70m</p>
-          </div>
-        </div>
-
-        <button class="ad__button">< Página anterior</button>
-        <button class="ad__button">Próxima página ></button>
-      </section>
-
-      <!-- Serviços -->
-      <section class="services__section">
-        <h2 class="services__title">No Imovirtual vai encontrar</h2>
-        <div class="services">
-          <div class="item">
-            <a href="/" class="circle">
-              <i class="fas fa-building"></i>
-              <ul class="menu-links">
-                <li class="links">Para comprar</li>
-                <li class="links">Para arrendar</li>
-                <li class="links">Para férias</li>
-              </ul>
-            </a>
-            <h3 class="item__name">Apartamentos</h3>
-          </div>
-          <div class="item">
-            <a href="/" class="circle">
-              <i class="fas fa-home"></i>
-              <ul class="menu-links">
-                <li class="links">Para comprar</li>
-                <li class="links">Para arrendar</li>
-                <li class="links">Para férias</li>
-              </ul>
-            </a>
-            <h3 class="item__name">Moradias</h3>
-          </div>
-          <div class="item">
-            <a href="/" class="circle">
-              <i class="fas fa-bed"></i>
-              <ul class="menu-links">
-                <li class="links">Para arrendar</li>
-              </ul>
-            </a>
-            <h3 class="item__name">Quartos</h3>
-          </div>
-          <div class="item">
-            <a href="/" class="circle">
-              <i class="fas fa-tree"></i>
-              <ul class="menu-links">
-                <li class="links">Para comprar</li>
-                <li class="links">Para arrendar</li>
-              </ul>
-            </a>
-            <h3 class="item__name">Terrenos</h3>
-          </div>
-          <div class="item">
-            <a href="/" class="circle">
-              <i class="fas fa-store"></i>
-              <ul class="menu-links">
-                <li class="links">Para comprar</li>
-                <li class="links">Para arrendar</li>
-              </ul>
-            </a>
-            <h3 class="item__name">Lojas</h3>
-          </div>
-          <div class="item">
-            <a href="/" class="circle">
-              <i class="fas fa-warehouse"></i>
-              <ul class="menu-links">
-                <li class="links">Para comprar</li>
-                <li class="links">Para arrendar</li>
-              </ul>
-            </a>
-            <h3 class="item__name">Armazéns</h3>
-          </div>
-          <div class="item">
-            <a href="/" class="circle">
-              <i class="fas fa-building"></i>
-              <ul class="menu-links">
-                <li class="links">Para comprar</li>
-                <li class="links">Para arrendar</li>
-              </ul>
-            </a>
-            <h3 class="item__name">Prédios</h3>
-          </div>
-          <div class="item">
-            <a href="/" class="circle">
-              <i class="fas fa-building"></i>
-              <ul class="menu-links">
-                <li class="links">Para comprar</li>
-                <li class="links">Para arrendar</li>
-              </ul>
-            </a>
-            <h3 class="item__name">Escritórios</h3>
-          </div>
-          <div class="item">
-            <a href="/" class="circle">
-              <i class="fas fa-warehouse"></i>
-              <ul class="menu-links">
-                <li class="links">Para comprar</li>
-                <li class="links">Para arrendar</li>
-              </ul>
-            </a>
-            <h3 class="item__name">Garagens</h3>
-          </div>
-          <div class="item">
-            <a href="/" class="circle">
-              <i class="fas fa-building"></i>
-              <ul class="menu-links">
-                <li class="links">Para comprar</li>
-                <li class="links">Para arrendar</li>
-              </ul>
-            </a>
-            <h3 class="item__name">Quintas e herdades</h3>
-          </div>
-          <div class="item">
-            <a href="/" class="circle">
-              <i class="fas fa-building"></i>
-              <ul class="menu-links">
-                <li class="links">Para comprar</li>
-              </ul>
-            </a>
-            <h3 class="item__name">Trespasses</h3>
-          </div>
-          <div class="item">
-            <a href="/" class="circle">
-              <i class="fas fa-building"></i>
-              <ul class="menu-links">
-                <li class="links">Para comprar</li>
-              </ul>
-            </a>
-            <h3 class="item__name">Empreendimentos</h3>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <section class="blog__section">
-      <h2 class="blog__title">Blog</h2>
-      <div class="blog__container">
-        <div class="blog__item item-1">
-          <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="" class="blog__image">
-          <div class="blog_image_text">
-            <p>09.12.2021</p>
-            <h3>Direitos dos inquilinos em caso de venda de imóvel</h3>
-            <button class="blog-down-btn">Direitos e deveres inquilinos</button>
-          </div>
-          <button class="blog-top-btn">Imobiliario</button>      
-        </div>
-        <div class="blog__item item-2">
-          <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="" class="blog__image">
-          <div class="blog_image_text">
-            <p>09.12.2021</p>
-            <h3>Direitos dos inquilinos em caso de venda de imóvel</h3>
-            <button class="blog-down-btn">Direitos e deveres inquilinos</button>
-          </div>            
-          <button class="blog-top-btn">Imobiliario</button>      
-        </div>
-        <div class="blog__item item-3">
-          <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="" class="blog__image">
-          <div class="blog_image_text">
-            <p>09.12.2021</p>
-            <h3>Direitos dos inquilinos em caso de venda de imóvel</h3>
-            <button class="blog-down-btn">Direitos e deveres inquilinos</button>
-          </div>    
-          <button class="blog-top-btn">Imobiliario</button>      
-        </div>
-      </div>
-      <a href="/" class="blog-sm-btn">Mais artigos</a>
-    </section>
-
-    <footer>
-        <div class="wrapper">
-          <div class="footer-content">         
-            <img src="img/logo.png" alt="" class="brand">
-            <div>
-              <ul>
-                <li href="/"><a>Sobre nós</a></li>
-                <li href="/"><a>Ajuda</a></li>
-                <li href="/"><a>Contacte-nos - Serviço Cliente</li></li>
-                <li href=""><a>Preços</a></li>
-                <li href=""><a>Termos de utilização</a></li>
-                <li href=""><a>Política de privacidade</a></li>
-                <li href=""><a>Configurações de privacidade</a></li>
-                <li href=""><a>Livro de reclamações online</a></li>
-                <li href=""><a>Dicas</a></li>
-              </ul>
+            <div class="top-buttons">
+              <select name="tipo">
+                <option value="">Apartamentos</option>
+                <option value="">Moradias</option>
+                <option value="">Quartos</option>
+                <option value="">Terrenos</option>
+                <option value="">Lojas</option>
+                <option value="">Armazéns</option>
+                <option value="">Garagens</option>
+                <option value="">Escritórios</option>
+              </select>
+              <select name="compra">
+                <option value="">Para comprar</option>
+                <option value="">Para arrendar</option>
+                <option value="">Para férias</option>
+              </select>
             </div>
+
+            <div class="input">
+              <input type="text" placeholder="Procure por uma localização" class="search-location">
+            </div>
+
+            <button class="more-opt">Mais Opções</button>
             
-            <div>
-              <p>Serviços e ferramentas</p>
-              <ul>
-                <li><a href="">Vantagens para profissionais</a></li>
-                <li><a href="">Imovalor</a></li>
-                <li><a href="">Relatório Mercado</a></li>
-              </ul>
+            <!-- Mais opções -->
+            <div class="more-opt-modal">
+              <div class="more-opt-modal-content">
+                <div class="modal-top">
+                  <h3>Mais opções</h3>
+                  <button>close</button>
+                </div>
             </div>
+          </div>
 
-            <div>
-                <p>Mapa do site</p>
-                <ul>
-                  <li><a href="">Mapa do site</a></li>
-                  <li><a href="">Mapa de distritos</a></li>
-                  <li><a href="">Blog</a></li>
-                  <li><a href="">Lista de agências</a></li>
-                  <li><a href="">Carreiras</a></li>
-                </ul>
-
-            </div>
+            <button class="search"> <i class="fas fa-search"></i>Pesquisar</button>
           
-            <div class="footer-button">
-              <a href="/" class="googleplay"><img src="img/googleplay.png" alt=""></a>
-              <a href="/" class="googleplay"><img src="img/app store.png" alt=""></a>
-            </div>
-        
-            <div>
-              <p>Social</p>
-              <a href=""><i class="fab fa-facebook-square"></i></a>
-              <a href=""><i class="fab fa-youtube"></i></a>
-              <a href=""><i class="fab fa-instagram-square"></i></a>
-            </div>
+          </form>
+        </div>
+      </div>
+  </section>
 
-          </div>       
+  <!-- add -->
+  <div class="wrapper">
+    <section class="highlight__section">
+      <h1 class="ad__title">Anúncios destacados</h1>
+      <div class="img__content">
+        <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="photo" class="ad__photo" />
+        <div class="image__text">
+          <h3>500 000€</h3>
+          <p>Rua Alfredo Bastos, Vila do Conde</p>
+          <p>85,70m</p>
+        </div>
+      </div>
 
-          <p class="footer-termos">O uso do website pressupõe uma aceitação dos <span><a href="/">Termos de Utilização</a></span></p>
+      <button class="ad__button">
+        < Página anterior</button>
+          <button class="ad__button">Próxima página ></button>
+    </section>
+
+    <!-- Serviços -->
+    <section class="services__section">
+      <h2 class="services__title">No Imovirtual vai encontrar</h2>
+      <div class="services">
+        <div class="item">
+          <a href="/" class="circle">
+            <i class="fas fa-building"></i>
+            <ul class="menu-links">
+              <li class="links">Para comprar</li>
+              <li class="links">Para arrendar</li>
+              <li class="links">Para férias</li>
+            </ul>
+          </a>
+          <h3 class="item__name">Apartamentos</h3>
+        </div>
+        <div class="item">
+          <a href="/" class="circle">
+            <i class="fas fa-home"></i>
+            <ul class="menu-links">
+              <li class="links">Para comprar</li>
+              <li class="links">Para arrendar</li>
+              <li class="links">Para férias</li>
+            </ul>
+          </a>
+          <h3 class="item__name">Moradias</h3>
+        </div>
+        <div class="item">
+          <a href="/" class="circle">
+            <i class="fas fa-bed"></i>
+            <ul class="menu-links">
+              <li class="links">Para arrendar</li>
+            </ul>
+          </a>
+          <h3 class="item__name">Quartos</h3>
+        </div>
+        <div class="item">
+          <a href="/" class="circle">
+            <i class="fas fa-tree"></i>
+            <ul class="menu-links">
+              <li class="links">Para comprar</li>
+              <li class="links">Para arrendar</li>
+            </ul>
+          </a>
+          <h3 class="item__name">Terrenos</h3>
+        </div>
+        <div class="item">
+          <a href="/" class="circle">
+            <i class="fas fa-store"></i>
+            <ul class="menu-links">
+              <li class="links">Para comprar</li>
+              <li class="links">Para arrendar</li>
+            </ul>
+          </a>
+          <h3 class="item__name">Lojas</h3>
+        </div>
+        <div class="item">
+          <a href="/" class="circle">
+            <i class="fas fa-warehouse"></i>
+            <ul class="menu-links">
+              <li class="links">Para comprar</li>
+              <li class="links">Para arrendar</li>
+            </ul>
+          </a>
+          <h3 class="item__name">Armazéns</h3>
+        </div>
+        <div class="item">
+          <a href="/" class="circle">
+            <i class="fas fa-building"></i>
+            <ul class="menu-links">
+              <li class="links">Para comprar</li>
+              <li class="links">Para arrendar</li>
+            </ul>
+          </a>
+          <h3 class="item__name">Prédios</h3>
+        </div>
+        <div class="item">
+          <a href="/" class="circle">
+            <i class="fas fa-building"></i>
+            <ul class="menu-links">
+              <li class="links">Para comprar</li>
+              <li class="links">Para arrendar</li>
+            </ul>
+          </a>
+          <h3 class="item__name">Escritórios</h3>
+        </div>
+        <div class="item">
+          <a href="/" class="circle">
+            <i class="fas fa-warehouse"></i>
+            <ul class="menu-links">
+              <li class="links">Para comprar</li>
+              <li class="links">Para arrendar</li>
+            </ul>
+          </a>
+          <h3 class="item__name">Garagens</h3>
+        </div>
+        <div class="item">
+          <a href="/" class="circle">
+            <i class="fas fa-building"></i>
+            <ul class="menu-links">
+              <li class="links">Para comprar</li>
+              <li class="links">Para arrendar</li>
+            </ul>
+          </a>
+          <h3 class="item__name">Quintas e herdades</h3>
+        </div>
+        <div class="item">
+          <a href="/" class="circle">
+            <i class="fas fa-building"></i>
+            <ul class="menu-links">
+              <li class="links">Para comprar</li>
+            </ul>
+          </a>
+          <h3 class="item__name">Trespasses</h3>
+        </div>
+        <div class="item">
+          <a href="/" class="circle">
+            <i class="fas fa-building"></i>
+            <ul class="menu-links">
+              <li class="links">Para comprar</li>
+            </ul>
+          </a>
+          <h3 class="item__name">Empreendimentos</h3>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="blog__section">
+    <h2 class="blog__title">Blog</h2>
+    <div class="blog__container">
+      <div class="blog__item item-1">
+        <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="" class="blog__image">
+        <div class="blog_image_text">
+          <p>09.12.2021</p>
+          <h3>Direitos dos inquilinos em caso de venda de imóvel</h3>
+          <button class="blog-down-btn">Direitos e deveres inquilinos</button>
+        </div>
+        <button class="blog-top-btn">Imobiliario</button>
+      </div>
+      <div class="blog__item item-2">
+        <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="" class="blog__image">
+        <div class="blog_image_text">
+          <p>09.12.2021</p>
+          <h3>Direitos dos inquilinos em caso de venda de imóvel</h3>
+          <button class="blog-down-btn">Direitos e deveres inquilinos</button>
+        </div>
+        <button class="blog-top-btn">Imobiliario</button>
+      </div>
+      <div class="blog__item item-3">
+        <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="" class="blog__image">
+        <div class="blog_image_text">
+          <p>09.12.2021</p>
+          <h3>Direitos dos inquilinos em caso de venda de imóvel</h3>
+          <button class="blog-down-btn">Direitos e deveres inquilinos</button>
+        </div>
+        <button class="blog-top-btn">Imobiliario</button>
+      </div>
+    </div>
+    <a href="/" class="blog-sm-btn">Mais artigos</a>
+  </section>
+
+  <footer>
+    <div class="wrapper">
+      <div class="footer-content">
+        <img src="img/logo.png" alt="" class="brand">
+        <div>
+          <ul>
+            <li href="/"><a>Sobre nós</a></li>
+            <li href="/"><a>Ajuda</a></li>
+            <li href="/"><a>Contacte-nos - Serviço Cliente</li>
+            </li>
+            <li href=""><a>Preços</a></li>
+            <li href=""><a>Termos de utilização</a></li>
+            <li href=""><a>Política de privacidade</a></li>
+            <li href=""><a>Configurações de privacidade</a></li>
+            <li href=""><a>Livro de reclamações online</a></li>
+            <li href=""><a>Dicas</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p>Serviços e ferramentas</p>
+          <ul>
+            <li><a href="">Vantagens para profissionais</a></li>
+            <li><a href="">Imovalor</a></li>
+            <li><a href="">Relatório Mercado</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p>Mapa do site</p>
+          <ul>
+            <li><a href="">Mapa do site</a></li>
+            <li><a href="">Mapa de distritos</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Lista de agências</a></li>
+            <li><a href="">Carreiras</a></li>
+          </ul>
 
         </div>
-    </footer>
-    
-    <script src="app.js"></script>
- 
-  </body>
+
+        <div class="footer-button">
+          <a href="/" class="googleplay"><img src="img/googleplay.png" alt=""></a>
+          <a href="/" class="googleplay"><img src="img/app store.png" alt=""></a>
+        </div>
+
+        <div>
+          <p>Social</p>
+          <a href=""><i class="fab fa-facebook-square"></i></a>
+          <a href=""><i class="fab fa-youtube"></i></a>
+          <a href=""><i class="fab fa-instagram-square"></i></a>
+        </div>
+
+      </div>
+
+      <p class="footer-termos">O uso do website pressupõe uma aceitação dos <span><a href="/">Termos de
+            Utilização</a></span></p>
+
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+
 </html>
