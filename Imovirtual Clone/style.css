@@ -274,21 +274,38 @@ header {
   height: 100vh;
   width: 100%;
   z-index: 10;
-  background-color: black;
-}
-
-.more-opt-modal-content {
-  padding: 15px 20px;
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 11;
-  color: white;
+  background-color: white;
+  padding: 20px 10px;
 }
 
 .modal-top{
   display: flex;
   justify-content: space-between;
+}
+
+.modal-content{
+  margin-top: 20px;
+}
+
+.modal-input{
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-input input{
+  width: 130px;
+}
+
+.modal-input input::placeholder{
+  text-align: right;
+}
+
+.modal-content select{
+  margin-top: 10px;
+  width: 100%;
+  height: 45px;
+  border-radius: 0;
+  border:1px solid var(--border-button);
 }
 
 .search {
