@@ -11,7 +11,6 @@
 </head>
 
 <body>
-  <!-- TODO: - Hover effect no botão de pesquisa no formulário -->
   <section>
     <header>
       <div class="top">
@@ -23,7 +22,9 @@
           <div class="menulogo"></div>
         </div>
       </div>
+
       <!-- Nav bar -->
+
       <nav class="navbar">
         <ul class="menu">
 
@@ -74,8 +75,7 @@
     </header>
   </section>
 
-
-  <!-- pesquisa -->
+  <!-- secção de pesquisa formulário -->
 
   <section class="search__section">
     <div class="search-content">
@@ -86,7 +86,7 @@
         </div>
         <div class="content">
           <form action="">
-
+            <!-- TODO: Adicionar hover effects nos botões abaixo -->
             <div class="top-buttons">
               <select name="tipo">
                 <option value="">Apartamentos</option>
@@ -110,50 +110,115 @@
 
             <button class="more-opt">Mais Opções</button>
 
-            <!-- Mais opções -->
+            <!-- Mais opções, painel imbutido nas medidas baixas de ecrã -->
+
             <div class="more-opt-modal">
-                <div class="modal-top">
-                  <h3>Mais opções</h3>
-                  <button>close</button>
+              <div class="modal-top">
+                <h3>Mais opções</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+              </div>
+              <!-- formulário mais opções-->
+              <div class="modal-content-section">
+                <!-- Preço -->
+                <div class="modal-content">
+                  <p>Preço</p>
+                  <div class="modal-input">
+                    <input type="text" placeholder="€" class="search-location">
+                    <input type="text" placeholder="€" class="search-location">
+                  </div>
                 </div>
-                <!-- formulário mais opções-->
-                <div class="modal-content-section">
-                  <div class="modal-content">
-                    <p>Preço</p>
-                    <div class="modal-input">
-                      <input type="text" placeholder="€" class="search-location">
-                      <input type="text" placeholder="€" class="search-location">
-                    </div>
+                <!-- Preço útil -->
+                <div class="modal-content">
+                  <p>Área útil (m<sup>2</sup>)</p>
+                  <div class="modal-input">
+                    <input type="text" placeholder="m2" class="search-location">
+                    <input type="text" placeholder="m2" class="search-location">
                   </div>
-                  <div class="modal-content">
-                    <p>Área útil (m<sup>2</sup>)</p>
-                    <div class="modal-input">
-                      <input type="text" placeholder="m2" class="search-location">
-                      <input type="text" placeholder="m2" class="search-location">
-                    </div>
+                </div>
+                <!-- Tipologia -->
+                <div class="modal-content">
+                  <p>Tipologia</p>
+                  <select class="" name="">
+                    <option value="">T0</option>
+                    <option value="">T1</option>
+                    <option value="">T2</option>
+                    <option value="">T3</option>
+                    <option value="">T4</option>
+                    <option value="">T5</option>
+                    <option value="">T6</option>
+                    <option value="">T7</option>
+                    <option value="">T8</option>
+                    <option value="">T9</option>
+                    <option value="">T10 ou superior</option>
+                    <select>
+                </div>
+                <!-- Preço/m2 -->
+                <div class="modal-content">
+                  <p>Preço/m<sup>2</sup></p>
+                  <div class="modal-input">
+                    <input type="text" placeholder="€/m2" class="search-location">
+                    <input type="text" placeholder="€/m2" class="search-location">
                   </div>
-                  <div class="modal-content">
-                    <p>Tipologia</p>
-                    <select class="" name="">
-                      <option value="">T0</option>
-                      <option value="">T1</option>
-                      <option value="">T2</option>
-                      <option value="">T3</option>
-                      <option value="">T4</option>
-                      <option value="">T5</option>
-                      <option value="">T6</option>
-                      <option value="">T7</option>
-                      <option value="">T8</option>
-                      <option value="">T9</option>
-                      <option value="">T10 ou superior</option>
-                      <select>
+                </div>
+                <!-- Área bruta -->
+                <div class="modal-content">
+                  <p>Área bruta (m<sup>2</sup>)</p>
+                  <div class="modal-input">
+                    <input type="text" placeholder="m2" class="search-location">
+                    <input type="text" placeholder="m2" class="search-location">
                   </div>
-
+                </div>
+                <!-- Anos de construção -->
+                <div class="modal-content">
+                  <p>Anos de construção</p>
+                  <div class="modal-input">
+                    <input type="text" placeholder="" class="search-location">
+                    <input type="text" placeholder="" class="search-location">
+                  </div>
+                </div>
+                <!-- Casas de banho -->
+                <div class="modal-content">
+                  <p>Casas de banho</p>
+                  <select name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4 ou mais</option>
+                  </select>
+                </div>
+                <!-- Certificado -->
+                <div class="modal-content">
+                  <p>Certificado energético</p>
+                  <select name="" id="">
+                    <option value="">A+</option>
+                    <option value="">A</option>
+                    <option value="">B</option>
+                    <option value="">B-</option>
+                    <option value="">C</option>
+                    <option value="">D</option>
+                    <option value="">E</option>
+                    <option value="">F</option>
+                    <option value="">G</option>
+                    <option value="">Isento</option>
+                  </select>
+                </div>
+                <!-- Condição -->
+                <div class="modal-content">
+                  <p>Condição</p>
+                  <select name="" id="">
+                    <option value="">Ruína</option>
+                    <option value="">Novo</option>
+                    <option value="">Renovado</option>
+                    <option value="">Usado</option>
+                    <option value="">Em construção</option>
+                    <option value="">Para recuperar</option>
+                  </select>
                 </div>
 
+              </div>
+            </div>
 
-          </div>
-
+            <!-- TODO: - Hover effect no botão de pesquisa no formulário -->
             <button class="search"> <i class="fas fa-search"></i>Pesquisar</button>
 
           </form>
@@ -161,7 +226,8 @@
       </div>
   </section>
 
-  <!-- add -->
+  <!-- anúncio destacado -->
+
   <div class="wrapper">
     <section class="highlight__section">
       <h1 class="ad__title">Anúncios destacados</h1>
@@ -179,7 +245,8 @@
           <button class="ad__button">Próxima página ></button>
     </section>
 
-    <!-- Serviços -->
+    <!-- Lista de Serviços -->
+
     <section class="services__section">
       <h2 class="services__title">No Imovirtual vai encontrar</h2>
       <div class="services">
@@ -306,6 +373,8 @@
     </section>
   </div>
 
+  <!-- Secção de Blog/Notícias -->
+
   <section class="blog__section">
     <h2 class="blog__title">Blog</h2>
     <div class="blog__container">
@@ -340,6 +409,8 @@
     <a href="/" class="blog-sm-btn">Mais artigos</a>
   </section>
 
+  <!-- Footer -->
+
   <footer>
     <div class="wrapper">
       <div class="footer-content">
@@ -349,7 +420,6 @@
             <li href="/"><a>Sobre nós</a></li>
             <li href="/"><a>Ajuda</a></li>
             <li href="/"><a>Contacte-nos - Serviço Cliente</li>
-            </li>
             <li href=""><a>Preços</a></li>
             <li href=""><a>Termos de utilização</a></li>
             <li href=""><a>Política de privacidade</a></li>
