@@ -69,7 +69,7 @@
             <li><a href="#">English</a></li>
           </div>
 
-          <button class="navbar-button">Adicionar Anúncio</button>
+          <button class="navbar-button" type="button">Adicionar Anúncio</button>
         </ul>
       </nav>
     </header>
@@ -81,12 +81,11 @@
     <div class="search-content">
       <div class="form">
         <div class="btn-group">
-          <button class="active">Pesquisar</button>
-          <button class="deactive">Empreendimentos</button>
+          <button id="active" type="button">Pesquisar</button>
+          <button id="deactive" type="button">Empreendimentos</button>
         </div>
         <div class="content">
-          <form action="">
-            <!-- TODO: Adicionar hover effects nos botões abaixo -->
+          <form>
             <div class="top-buttons">
               <select name="tipo">
                 <option value="">Apartamentos</option>
@@ -104,18 +103,17 @@
                 <option value="">Para férias</option>
               </select>
             </div>
-            <div class="input">
-              <input type="text" placeholder="Procure por uma localização" class="search-location">
-            </div>
 
-            <button class="more-opt">Mais Opções</button>
+            <input type="text" placeholder="Procure por uma localização" class="search-location">
+
+            <button class="more-opt" type="button">Mais Opções</button>
 
             <!-- Mais opções, painel imbutido nas medidas baixas de ecrã -->
-
+            <!-- TODO: Estilizar botões dropdowns, elementos select -->
             <div class="more-opt-modal">
               <div class="modal-top">
                 <h3>Mais opções</h3>
-                <button class="close-modal"><i class="fas fa-times"></i></button>
+                <button class="close-modal" type="button"><i class="fas fa-times"></i></button>
               </div>
               <!-- formulário mais opções-->
               <div class="modal-content-section">
@@ -139,6 +137,7 @@
                 <div class="modal-content">
                   <p>Tipologia</p>
                   <select class="" name="">
+                    <option value=""></option>
                     <option value="">T0</option>
                     <option value="">T1</option>
                     <option value="">T2</option>
@@ -180,6 +179,7 @@
                 <div class="modal-content">
                   <p>Casas de banho</p>
                   <select name="" id="">
+                    <option value=""></option>
                     <option value="">1</option>
                     <option value="">2</option>
                     <option value="">3</option>
@@ -190,6 +190,7 @@
                 <div class="modal-content">
                   <p>Certificado energético</p>
                   <select name="" id="">
+                    <option value=""></option>
                     <option value="">A+</option>
                     <option value="">A</option>
                     <option value="">B</option>
@@ -206,6 +207,7 @@
                 <div class="modal-content">
                   <p>Condição</p>
                   <select name="" id="">
+                    <option value=""></option>
                     <option value="">Ruína</option>
                     <option value="">Novo</option>
                     <option value="">Renovado</option>
@@ -214,12 +216,86 @@
                     <option value="">Para recuperar</option>
                   </select>
                 </div>
-
+                <!-- Checkbox´s -->
+                <div class="modal-content">
+                  <label for="checkbox">
+                    <input type="checkbox" id="checkbox"></input>
+                    Arrendamento acessível
+                  </label>
+                  <br>
+                  <label for="checkbox">
+                    <input type="checkbox" id="checkbox"></input>
+                    Negociável
+                  </label>
+                  <br>
+                  <label for="checkbox">
+                    <input type="checkbox" id="checkbox"></input>
+                    Para estudantes
+                  </label>
+                  <br>
+                  <label for="checkbox">
+                    <input type="checkbox" id="checkbox"></input>
+                    Apenas ofertas particulares
+                  </label>
+                  <br>
+                  <label for="checkbox">
+                    <input type="checkbox" id="checkbox"></input>
+                    Apenas anúncios com casa aberta
+                  </label>
+                </div>
               </div>
+              <!-- Disponibilidade -->
+              <div class="modal-content">
+                <p>Disponível a partir de</p>
+                <select name="" id="">
+                  <option value=""></option>
+                  <option value="">A partir de agora</option>
+                  <option value="">Num mês</option>
+                  <option value="">Em 90 dias</option>
+                </select>
+              </div>
+              <!-- Anuncio -->
+              <div class="modal-content">
+                <p>Anúncio inserido</p>
+                <select name="" id="">
+                  <option value=""></option>
+                  <option value="">Últimas 24 horas</option>
+                  <option value="">Últimos 3 dias</option>
+                  <option value="">Últimos 7 dias</option>
+                  <option value="">Nos últimos 14 dias</option>
+                </select>
+              </div>
+              <!-- NR anuncio -->
+              <div class="modal-content">
+                <p>Número do anúncio</p>
+                <input type="text" placeholder="" class="search-location">
+              </div>
+              <!-- Descrição -->
+              <div class="modal-content">
+                <p>Parte da descrição</p>
+                <input type="text" placeholder="" class="search-location">
+              </div>
+              <div class="modal-content">
+                <label for="checkbox">
+                  <input type="checkbox" id="checkbox"></input>
+                  Apenas anúncios com casa aberta
+                </label>
+                <br>
+                <label for="checkbox">
+                  <input type="checkbox " id="checkbox"></input>
+                  Apenas anúncios com casa aberta
+                </label>
+                <br>
+                <label for="checkbox">
+                  <input type="checkbox" id="checkbox"></input>
+                  Apenas anúncios com casa aberta
+                </label>
+              </div>
+              <!-- Características checkbox´s -->
             </div>
 
             <!-- TODO: - Hover effect no botão de pesquisa no formulário -->
-            <button class="search"> <i class="fas fa-search"></i>Pesquisar</button>
+            <button class="search" type="button"> <i class="fas fa-search"></i>Pesquisar</button>
 
           </form>
         </div>
@@ -240,9 +316,9 @@
         </div>
       </div>
 
-      <button class="ad__button">
+      <button class="ad__button" type="button">
         < Página anterior</button>
-          <button class="ad__button">Próxima página ></button>
+          <button class="ad__button" type="button">Próxima página ></button>
     </section>
 
     <!-- Lista de Serviços -->
@@ -383,27 +459,27 @@
         <div class="blog_image_text">
           <p>09.12.2021</p>
           <h3>Direitos dos inquilinos em caso de venda de imóvel</h3>
-          <button class="blog-down-btn">Direitos e deveres inquilinos</button>
+          <button class="blog-down-btn" type="button">Direitos e deveres inquilinos</button>
         </div>
-        <button class="blog-top-btn">Imobiliario</button>
+        <button class="blog-top-btn" type="button">Imobiliario</button>
       </div>
       <div class="blog__item item-2">
         <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="" class="blog__image">
         <div class="blog_image_text">
           <p>09.12.2021</p>
           <h3>Direitos dos inquilinos em caso de venda de imóvel</h3>
-          <button class="blog-down-btn">Direitos e deveres inquilinos</button>
+          <button class="blog-down-btn" type="button">Direitos e deveres inquilinos</button>
         </div>
-        <button class="blog-top-btn">Imobiliario</button>
+        <button class="blog-top-btn" type="button">Imobiliario</button>
       </div>
       <div class="blog__item item-3">
         <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="" class="blog__image">
         <div class="blog_image_text">
           <p>09.12.2021</p>
           <h3>Direitos dos inquilinos em caso de venda de imóvel</h3>
-          <button class="blog-down-btn">Direitos e deveres inquilinos</button>
+          <button class="blog-down-btn" type="button">Direitos e deveres inquilinos</button>
         </div>
-        <button class="blog-top-btn">Imobiliario</button>
+        <button class="blog-top-btn" type="button">Imobiliario</button>
       </div>
     </div>
     <a href="/" class="blog-sm-btn">Mais artigos</a>

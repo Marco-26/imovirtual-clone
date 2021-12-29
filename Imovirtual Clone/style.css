@@ -218,13 +218,16 @@ header {
   margin-top: 41px;
 }
 
-.active {
+#active {
   background-color: white;
-  font-weight: bold;
-  color: #25cbd3;
+  color: #1ea3aa;
 }
 
-.deactive {
+#active:hover{
+  color: #a8a8a8;
+}
+
+#deactive {
   background-color: #e0e0e0;
 }
 
@@ -243,6 +246,10 @@ header {
   cursor: pointer;
 }
 
+.top-buttons select:hover{
+  background-color:#f5f5f5;
+}
+
 .top-buttons select:nth-child(2) {
   float: right;
 }
@@ -253,6 +260,12 @@ header {
   padding: 10px 20px;
   text-align: center;
   margin-top: 10px;
+  outline: none;
+  text-align: left;
+}
+
+.search-location:hover{
+  border: 1px solid black;
 }
 
 .more-opt {
@@ -260,9 +273,13 @@ header {
   border: 1px solid var(--border-button);
   border-radius: 25px;
   padding: 7px 20px;
-  margin-top: 20px;
+  margin-top: 13px;
   color: var(--text-color);
   cursor: pointer;
+}
+
+.more-opt:hover{
+  background-color:#f5f5f5;
 }
 
 /* Secção mais opções, ativa quando o botão acima é clicado */
@@ -289,6 +306,12 @@ header {
   justify-content: space-between;
 }
 
+.modal-top button{
+  background:none;
+  border: none;
+  cursor: pointer;
+}
+
 .modal-content{
   margin-top: 20px;
 }
@@ -300,16 +323,10 @@ header {
 
 .modal-input input{
   width: 130px;
-  text-align: left;
-  outline: none;
 }
 
 .modal-input input::placeholder{
   text-align: right;
-}
-
-.modal-input input:hover{
-  border: 1px solid black;
 }
 
 .modal-content select{
@@ -327,14 +344,18 @@ header {
 }
 
 .search {
-  margin-top: 20px;
+  margin-top: 13px;
   display: block;
   width: 100%;
   padding: 10px 0px;
-  background-color: #25cbd3;
+  background-color: #1ea3aa;
   border: none;
   color: white;
   cursor: pointer;
+}
+
+.search:hover{
+  background-color:#25c5ce ;
 }
 
 .fa-search {
