@@ -41,16 +41,28 @@ submenu_parent_3.addEventListener("click", function(){
 });
 
 // Abrir modal formulário
-var modal = document.querySelector('.more-opt-modal'); // Modal formulário
-var modal_button = document.querySelector('.more-opt') // Botão que abre o modal formulário
+const modal = document.querySelector('.more-opt-modal'); // Modal formulário
+const modal_button = document.querySelector('.more-opt') // Botão que abre o modal formulário
 
 modal_button.addEventListener("click",function(){
     modal.classList.add('modal-active');
 });
 
 // Fechar modal formulário
-var button = document.querySelector('.close-modal'); // Botão que fecha o modal formulario
+const button = document.querySelector('.close-modal'); // Botão que fecha o modal formulario
 
 button.addEventListener("click",function(){
     modal.classList.remove('modal-active');
+});
+
+// Limpar todas as checkbox's do formulario
+
+const checkboxs = document.querySelectorAll('.checkbox');
+const cleanCheckboxBtn = document.querySelector('.clean-checkbox');
+
+cleanCheckboxBtn.addEventListener('click',function(){
+    // Fazer loop em todas as checkboxs e desativa-las
+    checkboxs.forEach(function(checkbox){
+        checkbox.checked = false;
+    });
 });
