@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <!-- TODO: Fazer form de procura responsivo (ultima coisa a ser feita) -->
   <section>
     <header>
       <div class="top">
@@ -436,17 +437,66 @@
   <div class="wrapper">
     <section class="highlight__section">
       <h1 class="ad__title">Anúncios destacados</h1>
-      <div class="img__content">
-        <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="photo" class="ad__photo" />
-        <div class="image__text">
-          <h3>500 000€</h3>
-          <p>Rua Alfredo Bastos, Vila do Conde</p>
-          <p>85,70m</p>
+      <div class="single-highlight">
+        <div class="img__content">
+          <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="photo" class="ad__photo" />
+          <div class="image__text">
+            <h3>500 000€</h3>
+            <p>Rua Alfredo Bastos, Vila do Conde</p>
+            <p>85,70m</p>
+          </div>
+        </div>
+
+        <button class="ad__button" type="button">
+          < Página anterior</button>
+            <button class="ad__button" type="button">Próxima página ></button>
+      </div>
+      <!-- Quando o dispositivo é >= 768px -->
+      <div class="highlight-grid-section">
+      <div class="highlight-grid">
+        <div class="highlight-item">
+          <div class="img__content">
+            <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="photo" class="ad__photo" />
+            <div class="image__text">
+              <h3>500 000€</h3>
+              <p>Rua Alfredo Bastos, Vila do Conde</p>
+              <p>85,70m</p>
+            </div>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="img__content">
+            <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="photo" class="ad__photo" />
+            <div class="image__text">
+              <h3>500 000€</h3>
+              <p>Rua Alfredo Bastos, Vila do Conde</p>
+              <p>85,70m</p>
+            </div>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="img__content">
+            <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="photo" class="ad__photo" />
+            <div class="image__text">
+              <h3>500 000€</h3>
+              <p>Rua Alfredo Bastos, Vila do Conde</p>
+              <p>85,70m</p>
+            </div>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="img__content">
+            <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="photo" class="ad__photo" />
+            <div class="image__text">
+              <h3>500 000€</h3>
+              <p>Rua Alfredo Bastos, Vila do Conde</p>
+              <p>85,70m</p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <button class="ad__button" type="button">< Página anterior</button>
-      <button class="ad__button" type="button">Próxima página ></button>
+      <button class="ad__button highlight-grid-btn" type="button">Ver tudo</button>
+    </div>
     </section>
 
     <!-- Lista de Serviços -->
