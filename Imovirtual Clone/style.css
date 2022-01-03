@@ -200,6 +200,10 @@ header {
   padding-top: 62px; /* altura da navigation bar*/
 }
 
+.search-section-title{
+  display: none;
+}
+
 .search-content {
   padding: 20px 0px;
   display: flex;
@@ -458,6 +462,10 @@ header {
   display: none;
 }
 
+.highlight-grid{
+  display: none;
+}
+
 /* Secção principal ''Serviços'' */
 
 .services {
@@ -683,17 +691,24 @@ header {
 /* 768px */
 
 @media all and (min-width:768px){
-  .highlight-grid-section{
+  .search-section-title{
     display: block;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
   }
 
-  .services {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+  .search-content{
+    width: 800px;
+    margin: 0 auto;
   }
 
   .single-highlight{
     display: none;
+  }  
+
+  .highlight-grid-section{
+    display: block;
   }
 
   .highlight-grid{
@@ -703,12 +718,45 @@ header {
     grid-template-rows: repeat(2, 1fr);
   }
 
-  .services__section{
-    margin-top: 240px;
+  .highlight-item:nth-child(5), .highlight-item:nth-child(6){
+    display: none;
   }
 
   .highlight-grid-btn{
     margin: 10px auto;
     width: 10%;
   }
+
+  .services {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  } 
+
+  .services__section{
+    margin-top: 240px;
+  }  
+}
+
+/* 992px */
+
+@media all and (min-width:992px){
+  
+  /* TODO: Navbar, 
+  formulario de procura,
+  adicionar perguntas frequentes,
+  ajustar footer */
+
+  .highlight-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .highlight-item:nth-child(5), .highlight-item:nth-child(6){
+    display: block;
+  }
+
+  .services {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  } 
 }
