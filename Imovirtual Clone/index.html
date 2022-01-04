@@ -12,6 +12,9 @@
 
 <body>
   <!-- TODO: Fazer form de procura responsivo (ultima coisa a ser feita) -->
+  <!-- TODO: Adicionar links por cima do footer -->
+  <!-- TODO: Tentar adicionar uma shadow por cima das imagens -->
+
   <section>
     <header>
       <div class="top">
@@ -88,25 +91,27 @@
         </div>
         <div class="content">
           <form>
-            <div class="top-buttons">
-              <select name="tipo">
-                <option value="">Apartamentos</option>
-                <option value="">Moradias</option>
-                <option value="">Quartos</option>
-                <option value="">Terrenos</option>
-                <option value="">Lojas</option>
-                <option value="">Armazéns</option>
-                <option value="">Garagens</option>
-                <option value="">Escritórios</option>
-              </select>
-              <select name="compra">
-                <option value="">Para comprar</option>
-                <option value="">Para arrendar</option>
-                <option value="">Para férias</option>
-              </select>
-            </div>
+            <div class="top-buttons-section">
+              <div class="top-buttons">
+                <select name="tipo">
+                  <option value="">Apartamentos</option>
+                  <option value="">Moradias</option>
+                  <option value="">Quartos</option>
+                  <option value="">Terrenos</option>
+                  <option value="">Lojas</option>
+                  <option value="">Armazéns</option>
+                  <option value="">Garagens</option>
+                  <option value="">Escritórios</option>
+                </select>
+                <select name="compra">
+                  <option value="">Para comprar</option>
+                  <option value="">Para arrendar</option>
+                  <option value="">Para férias</option>
+                </select>
+              </div>
 
-            <input type="text" placeholder="Procure por uma localização" class="search-location">
+              <input type="text" placeholder="Procure por uma localização" class="search-location">
+            </div>
 
             <button class="more-opt" type="button">Mais Opções</button>
             <button class="search" type="button"> <i class="fas fa-search"></i>Pesquisar</button>
@@ -468,31 +473,31 @@
           </div>
           <div class="highlight-item">
             <div class="img__content">
-              <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="photo" class="ad__photo" />
+              <img src="img/casa 2.jpg" alt="photo" class="ad__photo" />
               <div class="image__text">
-                <h3>500 000€</h3>
-                <p>Rua Alfredo Bastos, Vila do Conde</p>
-                <p>85,70m</p>
+                <h3>400 000€</h3>
+                <p>Conceição e Cabanas de Tavira, Faro</p>
+                <p>70,70m</p>
               </div>
             </div>
           </div>
           <div class="highlight-item">
             <div class="img__content">
-              <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="photo" class="ad__photo" />
+              <img src="img/casa 3.jpg" alt="photo" class="ad__photo" />
               <div class="image__text">
-                <h3>500 000€</h3>
-                <p>Rua Alfredo Bastos, Vila do Conde</p>
-                <p>85,70m</p>
+                <h3>800 000€</h3>
+                <p>Santa Maria Maior, Lisboa</p>
+                <p>90,70m</p>
               </div>
             </div>
           </div>
           <div class="highlight-item">
             <div class="img__content">
-              <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="photo" class="ad__photo" />
+              <img src="img/casa 4.jpg" alt="photo" class="ad__photo" />
               <div class="image__text">
-                <h3>500 000€</h3>
-                <p>Rua Alfredo Bastos, Vila do Conde</p>
-                <p>85,70m</p>
+                <h3>700 500€</h3>
+                <p>Cascais, Lisboa</p>
+                <p>100,70m</p>
               </div>
             </div>
           </div>
@@ -500,21 +505,21 @@
         do dispositivo é >= 992px -->
           <div class="highlight-item">
             <div class="img__content">
-              <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="photo" class="ad__photo" />
+              <img src="img/casa 6.jpg" alt="photo" class="ad__photo" />
               <div class="image__text">
-                <h3>500 000€</h3>
-                <p>Rua Alfredo Bastos, Vila do Conde</p>
-                <p>85,70m</p>
+                <h3>800 700€</h3>
+                <p>Vila Nova de Gaia, Porto</p>
+                <p>100,90m</p>
               </div>
             </div>
           </div>
           <div class="highlight-item">
             <div class="img__content">
-              <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="photo" class="ad__photo" />
+              <img src="img/casa 5.jpg" alt="photo" class="ad__photo" />
               <div class="image__text">
-                <h3>500 000€</h3>
-                <p>Rua Alfredo Bastos, Vila do Conde</p>
-                <p>85,70m</p>
+                <h3>Preço sob consulta</h3>
+                <p>Misericórdia, Lisboa</p>
+                <p>125m</p>
               </div>
             </div>
           </div>
@@ -657,31 +662,37 @@
     <h2 class="blog__title">Blog</h2>
     <div class="blog__container">
       <div class="blog__item item-1">
-        <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="" class="blog__image">
+        <img src="img/blog_image_1.jpg" alt="" class="blog__image">
         <div class="blog_image_text">
-          <p>09.12.2021</p>
-          <h3>Direitos dos inquilinos em caso de venda de imóvel</h3>
-          <button class="blog-down-btn" type="button">Direitos e deveres inquilinos</button>
+          <p>03.01.2022</p>
+          <h3>IMOSÍNTESE - Notícias 03/01</h3>
+          <button class="blog-down-btn" type="button">Setor de construção</button>
+          <button class="blog-down-btn" type="button">Confederação portuguesa da construção e imobiliário</button>
         </div>
-        <button class="blog-top-btn" type="button">Imobiliario</button>
+        <button class="blog-top-btn" type="button">Noticias</button>
       </div>
       <div class="blog__item item-2">
-        <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="" class="blog__image">
+        <img src="img/blog_image_2.jpg" alt="" class="blog__image">
         <div class="blog_image_text">
-          <p>09.12.2021</p>
-          <h3>Direitos dos inquilinos em caso de venda de imóvel</h3>
-          <button class="blog-down-btn" type="button">Direitos e deveres inquilinos</button>
+          <p>03.01.2022</p>
+          <h3>Tudo sobre os direitos dos compradores de imóveis</h3>
+          <button class="blog-down-btn" type="button">Direitos compradores</button>
+          <button class="blog-down-btn" type="button">Garantia de imóveis</button>
+          <button class="blog-down-btn" type="button">Legislação portugues</button>
         </div>
         <button class="blog-top-btn" type="button">Imobiliario</button>
       </div>
       <div class="blog__item item-3">
-        <img src="img/photo-1580587771525-78b9dba3b914.jfif" alt="" class="blog__image">
+        <img src="img/blog_image_3.jpg" alt="" class="blog__image">
         <div class="blog_image_text">
-          <p>09.12.2021</p>
-          <h3>Direitos dos inquilinos em caso de venda de imóvel</h3>
-          <button class="blog-down-btn" type="button">Direitos e deveres inquilinos</button>
+          <p>02.01.2022</p>
+          <h3>Casas de famosos: os negócios milionários que marcaram 2021</h3>
+          <button class="blog-down-btn" type="button">Casas de famosos</button>
+          <button class="blog-down-btn" type="button">Negócios imobiliários</button>
+          <button class="blog-down-btn" type="button">Mansões</button>
+          <button class="blog-down-btn" type="button">Ariana Grande</button>
         </div>
-        <button class="blog-top-btn" type="button">Imobiliario</button>
+        <button class="blog-top-btn" type="button">Lifestyle</button>
       </div>
     </div>
     <a href="/" class="blog-sm-btn">Mais artigos</a>
@@ -693,53 +704,57 @@
     <div class="wrapper">
       <div class="footer-content">
         <img src="img/logo.png" alt="" class="brand">
-        <div>
-          <ul>
-            <li href="/"><a>Sobre nós</a></li>
-            <li href="/"><a>Ajuda</a></li>
-            <li href="/"><a>Contacte-nos - Serviço Cliente</li>
-            <li href=""><a>Preços</a></li>
-            <li href=""><a>Termos de utilização</a></li>
-            <li href=""><a>Política de privacidade</a></li>
-            <li href=""><a>Configurações de privacidade</a></li>
-            <li href=""><a>Livro de reclamações online</a></li>
-            <li href=""><a>Dicas</a></li>
-          </ul>
+        <div class="footer-links">
+          <div>
+            <ul>
+              <li href="/"><a>Sobre nós</a></li>
+              <li href="/"><a>Ajuda</a></li>
+              <li href="/"><a>Contacte-nos - Serviço Cliente</li>
+              <li href=""><a>Preços</a></li>
+              <li href=""><a>Termos de utilização</a></li>
+              <li href=""><a>Política de privacidade</a></li>
+              <li href=""><a>Configurações de privacidade</a></li>
+              <li href=""><a>Livro de reclamações online</a></li>
+              <li href=""><a>Dicas</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <p>Serviços e ferramentas</p>
+            <ul>
+              <li><a href="">Vantagens para profissionais</a></li>
+              <li><a href="">Imovalor</a></li>
+              <li><a href="">Relatório Mercado</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <p>Mapa do site</p>
+            <ul>
+              <li><a href="">Mapa do site</a></li>
+              <li><a href="">Mapa de distritos</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Lista de agências</a></li>
+              <li><a href="">Carreiras</a></li>
+            </ul>
+
+          </div>
+
+          <div>
+          <div class="footer-button">
+            <a href="/" class="googleplay"><img src="img/googleplay.png" alt=""></a>
+            <a href="/" class="googleplay"><img src="img/app store.png" alt=""></a>
+          </div>
+
+          <div>
+            <p>Social</p>
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-instagram-square"></i></a>
+          </div>
         </div>
 
-        <div>
-          <p>Serviços e ferramentas</p>
-          <ul>
-            <li><a href="">Vantagens para profissionais</a></li>
-            <li><a href="">Imovalor</a></li>
-            <li><a href="">Relatório Mercado</a></li>
-          </ul>
         </div>
-
-        <div>
-          <p>Mapa do site</p>
-          <ul>
-            <li><a href="">Mapa do site</a></li>
-            <li><a href="">Mapa de distritos</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Lista de agências</a></li>
-            <li><a href="">Carreiras</a></li>
-          </ul>
-
-        </div>
-
-        <div class="footer-button">
-          <a href="/" class="googleplay"><img src="img/googleplay.png" alt=""></a>
-          <a href="/" class="googleplay"><img src="img/app store.png" alt=""></a>
-        </div>
-
-        <div>
-          <p>Social</p>
-          <a href=""><i class="fab fa-facebook-square"></i></a>
-          <a href=""><i class="fab fa-youtube"></i></a>
-          <a href=""><i class="fab fa-instagram-square"></i></a>
-        </div>
-
       </div>
 
       <p class="footer-termos">O uso do website pressupõe uma aceitação dos <span><a href="/">Termos de
