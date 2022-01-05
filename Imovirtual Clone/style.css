@@ -1,4 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* 
+.desktop-navbar {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dropdown a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown a:hover, .dropdown:hover .dropbtn {
+  background-color: #e0e0e0;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(212, 209, 209);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.anuncio {
+  background-color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #21a4b8;
+  border: 1.5px solid currentColor;
+  text-align: center;
+  padding: 12px 24px;
+}
+.nav {
+  display: flex;
+  margin-left: auto;
+  margin-right: 4%;
+} */
 
 :root {
   --border-button: rgb(189, 189, 189);
@@ -427,8 +492,27 @@ header {
   margin-bottom: 20px;
 }
 
+.single-highlight{
+  cursor: pointer;
+}
+
 .img__content {
   position: relative;
+}
+
+.gradient-overlay{
+  position: relative;
+}
+
+.gradient-overlay::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 225px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0), rgba(0, 0, 0, 0.534));
+    opacity: 0.75;
 }
 
 .ad__photo {
@@ -547,6 +631,7 @@ header {
   margin: 20px 0;
 }
 .blog__container {
+  cursor: pointer;
   display: flex;
   justify-content: center;
 }
@@ -554,6 +639,11 @@ header {
   width: 100%;
   position: relative;
 }
+
+.blog__item .gradient-overlay::after{
+  height: 210px;
+}
+
 .blog__image {
   width: 100%;
   height: 210px;
@@ -565,12 +655,15 @@ header {
   color: white;
   margin: 10px 10px;
 }
+
 .blog_image_text p {
   font-size: 15px;
 }
+
 .blog_image_text h3 {
   font-size: 17px;
 }
+
 .blog-down-btn {
   margin-top: 10px;
   background-color: #2e343f;
@@ -736,6 +829,10 @@ header {
     grid-template-rows: repeat(2, 1fr);
   }
 
+  .highlight-item{
+    cursor: pointer;   
+  }
+
   .highlight-item:nth-child(5), .highlight-item:nth-child(6){
     display: none;
   }
@@ -755,8 +852,8 @@ header {
   }
 
   .blog-sm-btn{
-    width: 80px;
-    font-size: 11px;
+    width: 100px;
+    font-size: 13px;
   }
 }
 
@@ -768,8 +865,18 @@ header {
   formulario de procura,
   adicionar perguntas frequentes,
   ajustar footer */
+  .container{
+    display: none;
+  }
+  
   .menu{
     display: none;
+  }
+
+  .search__section {
+    background-image: url(img/background-form.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .highlight__section{
@@ -796,8 +903,16 @@ header {
     grid-template-rows: repeat(3, 1fr);
   }
 
-  .blog__image{
+  .blog__item{
     height: 100%;
+  }
+
+  .blog__image{
+    height: inherit;
+  }
+  
+  .blog__item .gradient-overlay::after{
+    height: calc(100% - 3px);
   }
   
   .footer-content{
@@ -808,7 +923,5 @@ header {
   .footer-links{
     display: flex;
     justify-content: space-between;
-  }
-
-  
+  } 
 }
