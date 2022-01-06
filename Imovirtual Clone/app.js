@@ -1,43 +1,72 @@
+// função para obter largura do ecrã
+var w;
+window.onresize = window.onload = function() {
+    w = this.innerWidth;
+}
+
 // Abrir ou fechar hamburguer menu
 var logo = document.querySelector('.container');
-var menu = document.querySelector('.menu');
+var menu = document.querySelector('.nav__list');
 
 logo.addEventListener('click',function(){
     menu.classList.toggle('showmenu');
     logo.classList.toggle('active');
 });
 
-// Função para abrir ou fechar submenus na navbar
-function ToggleSubmenu(submenu, arrow){
+// Funções para abrir ou fechar submenus na navbar
+function ToggleSubmenu(submenu){
     submenu.classList.toggle('open-submenu');
-    arrow.classList.toggle('arrow-up');
+}
+
+function ToggleSubmenuDesktop(submenu){
+    submenu.classList.toggle('active__listitemdrop');
 }
 
 // Submenu 1
-const submenu_parent_1 = document.querySelector('.submenu-parent');
-const submenu_1 = document.querySelector('.submenu');
-const arrow_1 = document.querySelector('.fa-caret-down');
+const submenu_parent_1 = document.querySelector('.nav__item-1');
+const submenu_1 = document.querySelector('.nav__drop-1');
 
 submenu_parent_1.addEventListener("click",function(){
-    ToggleSubmenu(submenu_1, arrow_1);
+    if(w>=1215){
+        ToggleSubmenuDesktop(submenu_1);
+    }
+    else{
+        ToggleSubmenu(submenu_1);        
+    }
 });
 
 // Submenu 2
-const submenu_parent_2 = document.querySelector('.submenu-parent-2');
-const submenu_2 = document.querySelector('.submenu-2');
-const arrow_2 = document.querySelector('.fa-caret-down2');
+const submenu_parent_2 = document.querySelector('.nav__item-2');
+const submenu_2 = document.querySelector('.nav__drop-2');
 
 submenu_parent_2.addEventListener("click", function(){
-    ToggleSubmenu(submenu_2, arrow_2);
+    if(w>=1215){
+        ToggleSubmenuDesktop(submenu_2);
+    }
+    else{
+        ToggleSubmenu(submenu_2);        
+    }
 });
 
 // Submenu 3
-const submenu_parent_3 = document.querySelector('.submenu-parent-3');
-const submenu_3 = document.querySelector('.submenu-3');
-const arrow_3 = document.querySelector('.fa-caret-down3');
+const submenu_parent_3 = document.querySelector('.nav__item-3');
+const submenu_3 = document.querySelector('.nav__drop-3');
 
 submenu_parent_3.addEventListener("click", function(){
-    ToggleSubmenu(submenu_3, arrow_3);
+    if(w>=1215){
+        ToggleSubmenuDesktop(submenu_3);
+    }
+    else{
+        ToggleSubmenu(submenu_3);        
+    }
+});
+
+// Submenu 4
+const submenu_parent_4 = document.querySelector('.nav__item-4');
+const submenu_4 = document.querySelector('.nav__drop-4');
+
+submenu_parent_4.addEventListener("click", function(){
+    ToggleSubmenuDesktop(submenu_4);        
 });
 
 // Abrir modal formulário
