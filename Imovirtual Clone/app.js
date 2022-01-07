@@ -22,11 +22,18 @@ function ToggleSubmenuDesktop(submenu){
     submenu.classList.toggle('active__listitemdrop');
 }
 
+// Função que apenas permite ter um submenu aberto de cada vez
+function CloseSubmenus(submenu1, submenu2){
+    submenu1.classList.remove('active__listitemdrop') ? (w>=1215) : submenu1.classList.remove('active-listitemdrop');
+    submenu2.classList.remove('active__listitemdrop') ? (w>=1215) : submenu2.classList.remove('active-listitemdrop');
+}
+
 // Submenu 1
 const submenu_parent_1 = document.querySelector('.nav__item-1');
 const submenu_1 = document.querySelector('.nav__drop-1');
 
 submenu_parent_1.addEventListener("click",function(){
+    CloseSubmenus(submenu_2, submenu_3);
     if(w>=1215){
         ToggleSubmenuDesktop(submenu_1);
     }
@@ -40,6 +47,7 @@ const submenu_parent_2 = document.querySelector('.nav__item-2');
 const submenu_2 = document.querySelector('.nav__drop-2');
 
 submenu_parent_2.addEventListener("click", function(){
+    CloseSubmenus(submenu_1, submenu_3);
     if(w>=1215){
         ToggleSubmenuDesktop(submenu_2);
     }
@@ -53,6 +61,7 @@ const submenu_parent_3 = document.querySelector('.nav__item-3');
 const submenu_3 = document.querySelector('.nav__drop-3');
 
 submenu_parent_3.addEventListener("click", function(){
+    CloseSubmenus(submenu_1,submenu_2);
     if(w>=1215){
         ToggleSubmenuDesktop(submenu_3);
     }

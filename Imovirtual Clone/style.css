@@ -806,6 +806,10 @@ header {
     justify-content: space-around;
   }
 
+  .nav_item_holder:hover{
+    background-color: black;
+  }
+
   .nav__list {
     display: flex;
     justify-content: center;
@@ -817,7 +821,7 @@ header {
 
   .nav__listitemdrop {
     position: absolute;
-    top: 49px;
+    top: 48px;
     left: -1rem;
     background-color: white;
     width: 12rem;
@@ -827,7 +831,7 @@ header {
     gap: 0.5rem;
     display: none;
     transition: opacity 200ms ease-in-out;
-    box-shadow: 0px 0px 23px 1px rgba(0,0,0,0.50);
+    box-shadow: 0px 17px 21px -6px rgba(0,0,0,0.47);
   }
 
   .nav__listitemdrop li:not(:first-child){
@@ -860,13 +864,18 @@ header {
     right: -1216px;
     height: 100vh;
     background-color: white;
-    padding: 20px 25px;
+    padding: 10px 10px;
     transition: all 0.5s ease-in-out;
   }
 
   .nav__listitem{
     margin: 20px;
     font-size: 17px;
+    color: rgb(99, 99, 99);
+  }
+
+  .navbar__button{
+    color: #1ea3aa;
   }
 
   .nav__listitemdrop {
