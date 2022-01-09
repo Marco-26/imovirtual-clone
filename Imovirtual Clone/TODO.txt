@@ -1,0 +1,5 @@
+Navbar:
+ - Mudar a cor de fundo dos elementos pais menu no hover.
+
+Form:
+ - Tornar o mais responsivo possível.

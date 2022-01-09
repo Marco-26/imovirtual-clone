@@ -6,121 +6,64 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/cef357574f.js" crossorigin="anonymous"></script>
-  <title>Comprar e arrendar casa | Imovirtual</title>
+  <title>Comprar e arrendar casas | Imovirtual</title>
 </head>
 
 <body>
   <!-- TODO: Fazer form de procura responsivo (ultima coisa a ser feita) -->
   <!-- TODO: Adicionar seccao de links por cima do footer -->
-  <!-- TODO: Navbar responsiva na resolucao maior -->
 
   <section>
     <header>
-      <div class="top">
-        <img src="img/logo.png" alt="logo" class="brand">
-        <!--
-        <ul class="desktop-navbar">
-          <li class="dropdown">
-            <a href="#" class="dropbtn">Anúncios <i class="fas fa-caret-down"></i></a>
-
-            <div class="dropdown-content">
-              <a href="#">Para comprar</a>
-              <a href="#">Para arrendar</a>
-              <a href="#">Para ferias</a>
-              <a href="#">Empreendimentos</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropbtn">Empreendimentos <i class="fas fa-caret-down"></i></a>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropbtn">Profissionais <i class="fas fa-caret-down"></i></a>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </li>
-          <li>
-            <a href="#">blog</a>
-          </li>
-          <li>
-            <a href="#">A Nossa Campanha</a>
-          </li>
-          <div class="nav">
-            <li>
-              <a href="#"> <i class="far fa-user"></i>Conta Pessoal</a>
-            </li>
-
-            <li class="dropdown ">
-              <a href="#" class="dropbtn">pt <i class="fas fa-caret-down"></i></a>
-              <div class="dropdown-content">
-                <a href="#">português</a>
-                <a href="#">english</a>
-              </div>
-            </li>
-
-            <li>
-              <a href="#" class="anuncio ">Adicionar anuncio</a>
-            </li>
-          </div>
-        </ul>-->
-
+      <nav class="nav">
+        <div>
+          <img src="img/logo.png" alt="" class="logo">
+        </div>
         <!-- Hamburger logo  -->
         <div class="container">
           <div class="menulogo"></div>
           <div class="menulogo"></div>
           <div class="menulogo"></div>
         </div>
-      </div>
 
-      <!-- Nav bar -->
-
-      <nav class="navbar">
-        <ul class="menu">
-          <li><a href="#" class="submenu-parent">Anúncios <i class="fas fa-caret-down"></i></a>
-            <ul class="submenu">
-              <li><a href="/">Para comprar</a></li>
-              <li><a href="/">Para arrendar</a></li>
-              <li><a href="/">Para férias</a></li>
-              <li><a href="/">Empreendimentos</a></li>
-            </ul>
-          </li>
-
-          <li><a href="#" class="submenu-parent-2">Empreendimentos <i class="fas fa-caret-down fa-caret-down2"></i></a>
-            <ul class="submenu submenu-2">
-              <li><a href="/">Ver todos os anúncios</a></li>
-              <li><a href="/">Apartamentos novos</a></li>
-              <li><a href="/">Moradias novas</a></li>
-            </ul>
-          </li>
-
-          <li><a href="#" class="submenu-parent-3">Profissionais <i class="fas fa-caret-down fa-caret-down3"></i></a>
-            <ul class="submenu submenu-3">
-              <li><a href="/">Agências imobiliárias</a></li>
-              <li><a href="/">Promotores imobiliários</a></li>
-            </ul>
-          </li>
-
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">A Nossa Campanha</a></li>
-
-          <div class="sign-in">
-            <hr>
-            <li><a href="#"> <i class="fas fa-user"></i> Inicio de sessão</a></li>
-            <hr>
-          </div>
-
-          <li><a href="#">Português</a></li>
-          <li><a href="#">English</a></li>
-
-          <button class="navbar-button" type="button">Adicionar Anúncio</button>
+        <ul class="nav__list">
+            <li class="nav__listitem nav__item-1">Anúncios <i class="fas fa-chevron-down arrow1"></i>
+              <ul class="nav__listitemdrop nav__drop-1">
+                <li><a href="/">Para comprar</a></li>
+                <li><a href="/">Para arrendar</a></li>
+                <li><a href="/">Para férias</a></li>
+                <li><a href="/">Empreendimentos</a></li>
+              </ul>
+            </li>
+            <li class="nav__listitem nav__item-2">Empreendimentos <i class="fas fa-chevron-down arrow2"></i>
+              <ul class="nav__listitemdrop nav__drop-2">
+                <li><a href="/">Ver todos os anúncios</a></li>
+                <li><a href="/">Apartamentos novos</a></li>
+                <li><a href="/">Moradias novas</a></li>
+              </ul>
+            </li>
+            <li class="nav__listitem nav__item-3">Profissionais <i class="fas fa-chevron-down arrow3"></i>
+              <ul class="nav__listitemdrop nav__drop-3">
+                <li><a href="/">Agências imobiliárias</a></li>
+                <li><a href="/">Promotores imobiliários</a></li>
+              </ul>
+            </li>
+            <li class="nav__listitem">Blog</li>
+            <li class="nav__listitem">A nossa campanha</li>
+            <li class="nav__listitem nav__login">Conta pessoal</li>
+            <div class="mobile">
+              <li class="nav__listitem">Português</li>
+              <li class="nav__listitem">English</li>
+            </div>
+            <div class="desktop">
+              <li class="nav__listitem nav__item-4">PT
+                <ul class="nav__listitemdrop nav__drop-4">
+                  <li><a href="/">Portugues</a></li>
+                  <li><a href="/">English</a></li>
+                </ul>
+              </li>
+            </div>
+            <li class="nav__listitem navbar__button">Adicionar anúncio</li>
         </ul>
       </nav>
     </header>
@@ -129,358 +72,360 @@
   <!-- secção de pesquisa formulário -->
 
   <section class="search__section">
-    <h2 class="search-section-title">O melhor sítio para comprar e arrendar casa em Portugal</h2>
-    <div class="search-content">
-      <div class="form">
-        <div class="btn-group">
-          <button id="active" type="button">Pesquisar</button>
-          <button id="deactive" type="button">Empreendimentos</button>
-        </div>
-        <div class="content">
-          <form>
-            <div class="top-buttons-section">
-              <div class="top-buttons">
-                <select name="tipo">
-                  <option value="">Apartamentos</option>
-                  <option value="">Moradias</option>
-                  <option value="">Quartos</option>
-                  <option value="">Terrenos</option>
-                  <option value="">Lojas</option>
-                  <option value="">Armazéns</option>
-                  <option value="">Garagens</option>
-                  <option value="">Escritórios</option>
-                </select>
-                <select name="compra">
-                  <option value="">Para comprar</option>
-                  <option value="">Para arrendar</option>
-                  <option value="">Para férias</option>
-                </select>
+    <div class="search_section_holder">
+      <h2 class="search-section-title">O melhor sítio para comprar e arrendar casas em Portugal</h2>
+      <div class="search-content">
+        <div class="form">
+          <div class="btn-group">
+            <button id="active" type="button">Pesquisar</button>
+            <button id="deactive" type="button">Empreendimentos</button>
+          </div>
+          <div class="content">
+            <form>
+              <div class="top-buttons-section">
+                <div class="top-buttons">
+                  <select name="tipo">
+                    <option value="">Apartamentos</option>
+                    <option value="">Moradias</option>
+                    <option value="">Quartos</option>
+                    <option value="">Terrenos</option>
+                    <option value="">Lojas</option>
+                    <option value="">Armazéns</option>
+                    <option value="">Garagens</option>
+                    <option value="">Escritórios</option>
+                  </select>
+                  <select name="compra">
+                    <option value="">Para comprar</option>
+                    <option value="">Para arrendar</option>
+                    <option value="">Para férias</option>
+                  </select>
+                </div>
+
+                <input type="text" placeholder="Procure por uma localização" class="search-location">
               </div>
 
-              <input type="text" placeholder="Procure por uma localização" class="search-location">
-            </div>
+              <button class="more-opt" type="button">Mais Opções</button>
+              <button class="search" type="button"> <i class="fas fa-search"></i>Pesquisar</button>
 
-            <button class="more-opt" type="button">Mais Opções</button>
-            <button class="search" type="button"> <i class="fas fa-search"></i>Pesquisar</button>
-
-            <!-- Mais opções, painel imbutido nas medidas baixas de ecrã -->
-            <!-- TODO: Estilizar botões dropdowns, elementos select -->
-            <div class="more-opt-modal">
-              <div class="modal-top">
-                <h3>Mais opções</h3>
-                <button class="close-modal" type="button"><i class="fas fa-times"></i></button>
-              </div>
-              <!-- formulário mais opções-->
-              <div class="modal-content-section">
-                <!-- Preço -->
-                <div class="modal-content">
-                  <p>Preço</p>
-                  <div class="modal-input">
-                    <input type="text" placeholder="€" class="search-location">
-                    <input type="text" placeholder="€" class="search-location">
+              <!-- Mais opções, painel imbutido nas medidas baixas de ecrã -->
+              <!-- TODO: Estilizar botões dropdowns, elementos select -->
+              <div class="more-opt-modal">
+                <div class="modal-top">
+                  <h3>Mais opções</h3>
+                  <button class="close-modal" type="button"><i class="fas fa-times"></i></button>
+                </div>
+                <!-- formulário mais opções-->
+                <div class="modal-content-section">
+                  <!-- Preço -->
+                  <div class="modal-content">
+                    <p>Preço</p>
+                    <div class="modal-input">
+                      <input type="text" placeholder="€" class="search-location">
+                      <input type="text" placeholder="€" class="search-location">
+                    </div>
                   </div>
-                </div>
-                <!-- Preço útil -->
-                <div class="modal-content">
-                  <p>Área útil (m<sup>2</sup>)</p>
-                  <div class="modal-input">
-                    <input type="text" placeholder="m2" class="search-location">
-                    <input type="text" placeholder="m2" class="search-location">
+                  <!-- Preço útil -->
+                  <div class="modal-content">
+                    <p>Área útil (m<sup>2</sup>)</p>
+                    <div class="modal-input">
+                      <input type="text" placeholder="m2" class="search-location">
+                      <input type="text" placeholder="m2" class="search-location">
+                    </div>
                   </div>
-                </div>
-                <!-- Tipologia -->
-                <div class="modal-content">
-                  <p>Tipologia</p>
-                  <select class="" name="">
-                    <option value=""></option>
-                    <option value="">T0</option>
-                    <option value="">T1</option>
-                    <option value="">T2</option>
-                    <option value="">T3</option>
-                    <option value="">T4</option>
-                    <option value="">T5</option>
-                    <option value="">T6</option>
-                    <option value="">T7</option>
-                    <option value="">T8</option>
-                    <option value="">T9</option>
-                    <option value="">T10 ou superior</option>
-                    <select>
-                </div>
-                <!-- Preço/m2 -->
-                <div class="modal-content">
-                  <p>Preço/m<sup>2</sup></p>
-                  <div class="modal-input">
-                    <input type="text" placeholder="€/m2" class="search-location">
-                    <input type="text" placeholder="€/m2" class="search-location">
+                  <!-- Tipologia -->
+                  <div class="modal-content">
+                    <p>Tipologia</p>
+                    <select class="" name="">
+                      <option value=""></option>
+                      <option value="">T0</option>
+                      <option value="">T1</option>
+                      <option value="">T2</option>
+                      <option value="">T3</option>
+                      <option value="">T4</option>
+                      <option value="">T5</option>
+                      <option value="">T6</option>
+                      <option value="">T7</option>
+                      <option value="">T8</option>
+                      <option value="">T9</option>
+                      <option value="">T10 ou superior</option>
+                      <select>
                   </div>
-                </div>
-                <!-- Área bruta -->
-                <div class="modal-content">
-                  <p>Área bruta (m<sup>2</sup>)</p>
-                  <div class="modal-input">
-                    <input type="text" placeholder="m2" class="search-location">
-                    <input type="text" placeholder="m2" class="search-location">
+                  <!-- Preço/m2 -->
+                  <div class="modal-content">
+                    <p>Preço/m<sup>2</sup></p>
+                    <div class="modal-input">
+                      <input type="text" placeholder="€/m2" class="search-location">
+                      <input type="text" placeholder="€/m2" class="search-location">
+                    </div>
                   </div>
-                </div>
-                <!-- Anos de construção -->
-                <div class="modal-content">
-                  <p>Anos de construção</p>
-                  <div class="modal-input">
+                  <!-- Área bruta -->
+                  <div class="modal-content">
+                    <p>Área bruta (m<sup>2</sup>)</p>
+                    <div class="modal-input">
+                      <input type="text" placeholder="m2" class="search-location">
+                      <input type="text" placeholder="m2" class="search-location">
+                    </div>
+                  </div>
+                  <!-- Anos de construção -->
+                  <div class="modal-content">
+                    <p>Anos de construção</p>
+                    <div class="modal-input">
+                      <input type="text" placeholder="" class="search-location">
+                      <input type="text" placeholder="" class="search-location">
+                    </div>
+                  </div>
+                  <!-- Casas de banho -->
+                  <div class="modal-content">
+                    <p>Casas de banho</p>
+                    <select name="" id="">
+                      <option value=""></option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4 ou mais</option>
+                    </select>
+                  </div>
+                  <!-- Certificado -->
+                  <div class="modal-content">
+                    <p>Certificado energético</p>
+                    <select name="" id="">
+                      <option value=""></option>
+                      <option value="">A+</option>
+                      <option value="">A</option>
+                      <option value="">B</option>
+                      <option value="">B-</option>
+                      <option value="">C</option>
+                      <option value="">D</option>
+                      <option value="">E</option>
+                      <option value="">F</option>
+                      <option value="">G</option>
+                      <option value="">Isento</option>
+                    </select>
+                  </div>
+                  <!-- Condição -->
+                  <div class="modal-content">
+                    <p>Condição</p>
+                    <select name="" id="">
+                      <option value=""></option>
+                      <option value="">Ruína</option>
+                      <option value="">Novo</option>
+                      <option value="">Renovado</option>
+                      <option value="">Usado</option>
+                      <option value="">Em construção</option>
+                      <option value="">Para recuperar</option>
+                    </select>
+                  </div>
+                  <!-- Checkbox´s -->
+                  <div class="modal-content">
+                    <div class="checkbox-area">
+                      <label for="1">
+                        <input type="checkbox" id="1" class="checkbox"></input>
+                        Aceita permuta
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="2">
+                        <input type="checkbox" id="2" class="checkbox"></input>
+                        Negociável
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="3">
+                        <input type="checkbox" id="3" class="checkbox"></input>
+                        Imóvel de banca
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="4">
+                        <input type="checkbox" id="4" class="checkbox"></input>
+                        Apenas ofertas particulares
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="5">
+                        <input type="checkbox" id="5" class="checkbox"></input>
+                        Apenas anúncios com casa aberta
+                      </label>
+                    </div>
+                  </div>
+                  <!-- Disponibilidade -->
+                  <div class="modal-content">
+                    <p>Disponível a partir de</p>
+                    <select name="" id="">
+                      <option value=""></option>
+                      <option value="">A partir de agora</option>
+                      <option value="">Num mês</option>
+                      <option value="">Em 90 dias</option>
+                    </select>
+                  </div>
+                  <!-- Anuncio -->
+                  <div class="modal-content">
+                    <p>Anúncio inserido</p>
+                    <select name="" id="">
+                      <option value=""></option>
+                      <option value="">Últimas 24 horas</option>
+                      <option value="">Últimos 3 dias</option>
+                      <option value="">Últimos 7 dias</option>
+                      <option value="">Nos últimos 14 dias</option>
+                    </select>
+                  </div>
+                  <!-- NR anuncio -->
+                  <div class="modal-content">
+                    <p>Número do anúncio</p>
                     <input type="text" placeholder="" class="search-location">
+                  </div>
+                  <!-- Descrição -->
+                  <div class="modal-content">
+                    <p>Parte da descrição</p>
                     <input type="text" placeholder="" class="search-location">
                   </div>
-                </div>
-                <!-- Casas de banho -->
-                <div class="modal-content">
-                  <p>Casas de banho</p>
-                  <select name="" id="">
-                    <option value=""></option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4 ou mais</option>
-                  </select>
-                </div>
-                <!-- Certificado -->
-                <div class="modal-content">
-                  <p>Certificado energético</p>
-                  <select name="" id="">
-                    <option value=""></option>
-                    <option value="">A+</option>
-                    <option value="">A</option>
-                    <option value="">B</option>
-                    <option value="">B-</option>
-                    <option value="">C</option>
-                    <option value="">D</option>
-                    <option value="">E</option>
-                    <option value="">F</option>
-                    <option value="">G</option>
-                    <option value="">Isento</option>
-                  </select>
-                </div>
-                <!-- Condição -->
-                <div class="modal-content">
-                  <p>Condição</p>
-                  <select name="" id="">
-                    <option value=""></option>
-                    <option value="">Ruína</option>
-                    <option value="">Novo</option>
-                    <option value="">Renovado</option>
-                    <option value="">Usado</option>
-                    <option value="">Em construção</option>
-                    <option value="">Para recuperar</option>
-                  </select>
-                </div>
-                <!-- Checkbox´s -->
-                <div class="modal-content">
-                  <div class="checkbox-area">
-                    <label for="1">
-                      <input type="checkbox" id="1" class="checkbox"></input>
-                      Aceita permuta
-                    </label>
+                  <div class="modal-content">
+                    <div class="checkbox-area">
+                      <label for="6">
+                        <input type="checkbox" id="6" class="checkbox"></input>
+                        Fotografia
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="7">
+                        <input type="checkbox" id="7" class="checkbox"></input>
+                        Vídeo
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="8">
+                        <input type="checkbox" id="8" class="checkbox"></input>
+                        Visita virtual
+                      </label>
+                    </div>
                   </div>
-                  <div class="checkbox-area">
-                    <label for="2">
-                      <input type="checkbox" id="2" class="checkbox"></input>
-                      Negociável
-                    </label>
+                  <!-- Características checkbox´s -->
+                  <div class="modal-content">
+                    <p>Características</p>
+                    <div class="checkbox-area">
+                      <label for="9">
+                        <input type="checkbox" id="9" class="checkbox"></input>
+                        Aquecimento central
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="10">
+                        <input type="checkbox" id="10" class="checkbox"></input>
+                        Ar condicionado
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="11">
+                        <input type="checkbox" id="11" class="checkbox"></input>
+                        Acessibilidade a pessoas com mobilidade condicionada
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="12">
+                        <input type="checkbox" id="12" class="checkbox"></input>
+                        Arrecadação
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="13">
+                        <input type="checkbox" id="13" class="checkbox"></input>
+                        Box (1 carro)
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="14">
+                        <input type="checkbox" id="14" class="checkbox"></input>
+                        Box (2 carros)
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="15">
+                        <input type="checkbox" id="15" class="checkbox"></input>
+                        Condomínio fechado
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="16">
+                        <input type="checkbox" id="16" class="checkbox"></input>
+                        Cozinha equipada
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="17">
+                        <input type="checkbox" id="17" class="checkbox"></input>
+                        Elevador
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="18">
+                        <input type="checkbox" id="18" class="checkbox"></input>
+                        Jardim
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="19">
+                        <input type="checkbox" id="19" class="checkbox"></input>
+                        Lareira
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="20">
+                        <input type="checkbox" id="20" class="checkbox"></input>
+                        Mobilado
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="21">
+                        <input type="checkbox" id="21" class="checkbox"></input>
+                        Parqueamento (1 carro)
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="22">
+                        <input type="checkbox" id="22" class="checkbox"></input>
+                        Parqueamento (2 carros)
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="23">
+                        <input type="checkbox" id="23" class="checkbox"></input>
+                        Piscina
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="24">
+                        <input type="checkbox" id="24" class="checkbox"></input>
+                        Suite
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="25">
+                        <input type="checkbox" id="25" class="checkbox"></input>
+                        Terraço
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="26">
+                        <input type="checkbox" id="26" class="checkbox"></input>
+                        Varanda
+                      </label>
+                    </div>
+                    <div class="checkbox-area">
+                      <label for="27">
+                        <input type="checkbox" id="27" class="checkbox"></input>
+                        Vigilância/segurança
+                      </label>
+                    </div>
                   </div>
-                  <div class="checkbox-area">
-                    <label for="3">
-                      <input type="checkbox" id="3" class="checkbox"></input>
-                      Imóvel de banca
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="4">
-                      <input type="checkbox" id="4" class="checkbox"></input>
-                      Apenas ofertas particulares
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="5">
-                      <input type="checkbox" id="5" class="checkbox"></input>
-                      Apenas anúncios com casa aberta
-                    </label>
-                  </div>
-                </div>
-                <!-- Disponibilidade -->
-                <div class="modal-content">
-                  <p>Disponível a partir de</p>
-                  <select name="" id="">
-                    <option value=""></option>
-                    <option value="">A partir de agora</option>
-                    <option value="">Num mês</option>
-                    <option value="">Em 90 dias</option>
-                  </select>
-                </div>
-                <!-- Anuncio -->
-                <div class="modal-content">
-                  <p>Anúncio inserido</p>
-                  <select name="" id="">
-                    <option value=""></option>
-                    <option value="">Últimas 24 horas</option>
-                    <option value="">Últimos 3 dias</option>
-                    <option value="">Últimos 7 dias</option>
-                    <option value="">Nos últimos 14 dias</option>
-                  </select>
-                </div>
-                <!-- NR anuncio -->
-                <div class="modal-content">
-                  <p>Número do anúncio</p>
-                  <input type="text" placeholder="" class="search-location">
-                </div>
-                <!-- Descrição -->
-                <div class="modal-content">
-                  <p>Parte da descrição</p>
-                  <input type="text" placeholder="" class="search-location">
-                </div>
-                <div class="modal-content">
-                  <div class="checkbox-area">
-                    <label for="6">
-                      <input type="checkbox" id="6" class="checkbox"></input>
-                      Fotografia
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="7">
-                      <input type="checkbox" id="7" class="checkbox"></input>
-                      Vídeo
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="8">
-                      <input type="checkbox" id="8" class="checkbox"></input>
-                      Visita virtual
-                    </label>
-                  </div>
-                </div>
-                <!-- Características checkbox´s -->
-                <div class="modal-content">
-                  <p>Características</p>
-                  <div class="checkbox-area">
-                    <label for="9">
-                      <input type="checkbox" id="9" class="checkbox"></input>
-                      Aquecimento central
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="10">
-                      <input type="checkbox" id="10" class="checkbox"></input>
-                      Ar condicionado
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="11">
-                      <input type="checkbox" id="11" class="checkbox"></input>
-                      Acessibilidade a pessoas com mobilidade condicionada
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="12">
-                      <input type="checkbox" id="12" class="checkbox"></input>
-                      Arrecadação
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="13">
-                      <input type="checkbox" id="13" class="checkbox"></input>
-                      Box (1 carro)
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="14">
-                      <input type="checkbox" id="14" class="checkbox"></input>
-                      Box (2 carros)
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="15">
-                      <input type="checkbox" id="15" class="checkbox"></input>
-                      Condomínio fechado
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="16">
-                      <input type="checkbox" id="16" class="checkbox"></input>
-                      Cozinha equipada
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="17">
-                      <input type="checkbox" id="17" class="checkbox"></input>
-                      Elevador
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="18">
-                      <input type="checkbox" id="18" class="checkbox"></input>
-                      Jardim
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="19">
-                      <input type="checkbox" id="19" class="checkbox"></input>
-                      Lareira
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="20">
-                      <input type="checkbox" id="20" class="checkbox"></input>
-                      Mobilado
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="21">
-                      <input type="checkbox" id="21" class="checkbox"></input>
-                      Parqueamento (1 carro)
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="22">
-                      <input type="checkbox" id="22" class="checkbox"></input>
-                      Parqueamento (2 carros)
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="23">
-                      <input type="checkbox" id="23" class="checkbox"></input>
-                      Piscina
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="24">
-                      <input type="checkbox" id="24" class="checkbox"></input>
-                      Suite
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="25">
-                      <input type="checkbox" id="25" class="checkbox"></input>
-                      Terraço
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="26">
-                      <input type="checkbox" id="26" class="checkbox"></input>
-                      Varanda
-                    </label>
-                  </div>
-                  <div class="checkbox-area">
-                    <label for="27">
-                      <input type="checkbox" id="27" class="checkbox"></input>
-                      Vigilância/segurança
-                    </label>
+                  <div class="modal-footer">
+                    <div class="modal-footer-content">
+                      <button type="button" class="clean-checkbox">Limpar</button>
+                      <button type="button"><i class="fas fa-search"></i>Mostrar resultados</button>
+                    </div>
                   </div>
                 </div>
-                <div class="modal-footer">
-                  <div class="modal-footer-content">
-                    <button type="button" class="clean-checkbox">Limpar</button>
-                    <button type="button"><i class="fas fa-search"></i>Mostrar resultados</button>
-                  </div>
-                </div>
-              </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
   </section>
@@ -497,8 +442,8 @@
           </div>
           <div class="image__text">
             <h3>500 000€</h3>
-            <p>Rua Alfredo Bastos, Vila do Conde</p>
-            <p>85,70m</p>
+            <h4>Rua Alfredo Bastos, Vila do Conde</h4>
+            <h5>85,70m</h5>
           </div>
         </div>
 
@@ -518,8 +463,8 @@
 
               <div class="image__text">
                 <h3>500 000€</h3>
-                <p>Rua Alfredo Bastos, Vila do Conde</p>
-                <p>85,70m</p>
+                <h4>Rua Alfredo Bastos, Vila do Conde</h4>
+                <h5>85,70m</h5>
               </div>
             </div>
           </div>
@@ -532,8 +477,8 @@
               </div>
               <div class="image__text">
                 <h3>400 000€</h3>
-                <p>Conceição e Cabanas de Tavira, Faro</p>
-                <p>70,70m</p>
+                <h4>Conceição e Cabanas de Tavira, Faro</h4>
+                <h5>70,70m</h5>
               </div>
             </div>
           </div>
@@ -544,8 +489,8 @@
               </div>
               <div class="image__text">
                 <h3>800 000€</h3>
-                <p>Santa Maria Maior, Lisboa</p>
-                <p>90,70m</p>
+                <h4>Santa Maria Maior, Lisboa</h4>
+                <h5>90,70m</h5>
               </div>
             </div>
           </div>
@@ -556,8 +501,8 @@
               </div>
               <div class="image__text">
                 <h3>700 500€</h3>
-                <p>Cascais, Lisboa</p>
-                <p>100,70m</p>
+                <h4>Cascais, Lisboa</h4>
+                <h5>100,70m</h5>
               </div>
             </div>
           </div>
@@ -570,8 +515,8 @@
               </div>
               <div class="image__text">
                 <h3>800 700€</h3>
-                <p>Vila Nova de Gaia, Porto</p>
-                <p>100,90m</p>
+                <h4>Vila Nova de Gaia, Porto</h4>
+                <h5>100,90m</h5>
               </div>
             </div>
           </div>
@@ -582,8 +527,8 @@
               </div>
               <div class="image__text">
                 <h3>Preço sob consulta</h3>
-                <p>Misericórdia, Lisboa</p>
-                <p>125m</p>
+                <h4>Misericórdia, Lisboa</h4>
+                <h5>125m</h5>
               </div>
             </div>
           </div>
@@ -765,7 +710,7 @@
   <footer>
     <div class="wrapper">
       <div class="footer-content">
-        <img src="img/logo.png" alt="" class="brand">
+        <img src="img/logo.png" alt="" class="logo">
         <div class="footer-links">
           <div>
             <ul>
@@ -826,7 +771,6 @@
   </footer>
 
   <script src="app.js"></script>
-
+  <script src="https://kit.fontawesome.com/cef357574f.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
