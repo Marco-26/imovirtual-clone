@@ -1,17 +1,5 @@
-- Arranjar os icones.
-
 Navbar:
- - Adicionar uma shadow de fundo.
  - Mudar a cor de fundo dos elementos pais menu no hover.
-
-Hamburguer menu:
- - Adicionar setas nos items principais.
 
 Form:
  - Tornar o mais responsivo possível.
-
-Anúncios destacados:
- - Mudar o tamanho da fonte da localização e tamanho em m2 das casas.
-
-Footer:
- - Diminuir o tamanho da fonte.

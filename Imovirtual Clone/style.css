@@ -11,11 +11,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -36,7 +35,9 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   font-weight: 500;
   color: inherit;
 }
@@ -62,6 +63,16 @@ footer {
 
 option {
   padding: 20px 20px;
+}
+
+.fa-chevron-down{
+  font-size: 10px;
+  transform: rotate(0deg);
+  transition: all 0.4s;
+}
+
+.arrow-active{
+  transform:rotate(-180deg);
 }
 
 .wrapper {
@@ -386,7 +397,7 @@ header {
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 255, 0),
-    rgba(0, 0, 0, 0.534)
+    rgba(0, 0, 0, 0.65)
   );
   opacity: 0.75;
 }
@@ -466,6 +477,10 @@ header {
 .footer-content .fas {
   font-size: 50px;
   color: #989898;
+}
+
+.footer-content{
+  font-size: 13px;
 }
 
 /* Secção secundária ''conteúdo dentro dos circulos'' */
@@ -804,10 +819,7 @@ header {
   .nav{
     display: flex;
     justify-content: space-around;
-  }
-
-  .nav_item_holder:hover{
-    background-color: black;
+    box-shadow: 0px 10px 13px -7px #00000036;
   }
 
   .nav__list {
