@@ -11,7 +11,7 @@
 
 <body>
   <!-- TODO: Fazer form de procura responsivo (ultima coisa a ser feita) -->
-  <!-- TODO: Adicionar seccao de links por cima do footer -->
+  <!-- TODO: Modal que permite calcular financiamento -->
 
   <section>
     <header>
@@ -27,43 +27,43 @@
         </div>
 
         <ul class="nav__list">
-            <li class="nav__listitem nav__item-1">Anúncios <i class="fas fa-chevron-down arrow1"></i>
-              <ul class="nav__listitemdrop nav__drop-1">
-                <li><a href="/">Para comprar</a></li>
-                <li><a href="/">Para arrendar</a></li>
-                <li><a href="/">Para férias</a></li>
-                <li><a href="/">Empreendimentos</a></li>
+          <li class="nav__listitem nav__item-1">Anúncios <i class="fas fa-chevron-down arrow1"></i>
+            <ul class="nav__listitemdrop nav__drop-1">
+              <li><a href="/">Para comprar</a></li>
+              <li><a href="/">Para arrendar</a></li>
+              <li><a href="/">Para férias</a></li>
+              <li><a href="/">Empreendimentos</a></li>
+            </ul>
+          </li>
+          <li class="nav__listitem nav__item-2">Empreendimentos <i class="fas fa-chevron-down arrow2"></i>
+            <ul class="nav__listitemdrop nav__drop-2">
+              <li><a href="/">Ver todos os anúncios</a></li>
+              <li><a href="/">Apartamentos novos</a></li>
+              <li><a href="/">Moradias novas</a></li>
+            </ul>
+          </li>
+          <li class="nav__listitem nav__item-3">Profissionais <i class="fas fa-chevron-down arrow3"></i>
+            <ul class="nav__listitemdrop nav__drop-3">
+              <li><a href="/">Agências imobiliárias</a></li>
+              <li><a href="/">Promotores imobiliários</a></li>
+            </ul>
+          </li>
+          <li class="nav__listitem">Blog</li>
+          <li class="nav__listitem">A nossa campanha</li>
+          <li class="nav__listitem nav__login">Conta pessoal</li>
+          <div class="mobile">
+            <li class="nav__listitem">Português</li>
+            <li class="nav__listitem">English</li>
+          </div>
+          <div class="desktop">
+            <li class="nav__listitem nav__item-4">PT
+              <ul class="nav__listitemdrop nav__drop-4">
+                <li><a href="/">Portugues</a></li>
+                <li><a href="/">English</a></li>
               </ul>
             </li>
-            <li class="nav__listitem nav__item-2">Empreendimentos <i class="fas fa-chevron-down arrow2"></i>
-              <ul class="nav__listitemdrop nav__drop-2">
-                <li><a href="/">Ver todos os anúncios</a></li>
-                <li><a href="/">Apartamentos novos</a></li>
-                <li><a href="/">Moradias novas</a></li>
-              </ul>
-            </li>
-            <li class="nav__listitem nav__item-3">Profissionais <i class="fas fa-chevron-down arrow3"></i>
-              <ul class="nav__listitemdrop nav__drop-3">
-                <li><a href="/">Agências imobiliárias</a></li>
-                <li><a href="/">Promotores imobiliários</a></li>
-              </ul>
-            </li>
-            <li class="nav__listitem">Blog</li>
-            <li class="nav__listitem">A nossa campanha</li>
-            <li class="nav__listitem nav__login">Conta pessoal</li>
-            <div class="mobile">
-              <li class="nav__listitem">Português</li>
-              <li class="nav__listitem">English</li>
-            </div>
-            <div class="desktop">
-              <li class="nav__listitem nav__item-4">PT
-                <ul class="nav__listitemdrop nav__drop-4">
-                  <li><a href="/">Portugues</a></li>
-                  <li><a href="/">English</a></li>
-                </ul>
-              </li>
-            </div>
-            <li class="nav__listitem navbar__button">Adicionar anúncio</li>
+          </div>
+          <li class="nav__listitem navbar__button">Adicionar anúncio</li>
         </ul>
       </nav>
     </header>
@@ -534,6 +534,85 @@
           </div>
         </div>
         <button class="ad__button highlight-grid-btn" type="button">Ver tudo</button>
+        <button class="ad__button highlight-grid-btn" type="button">Financiamento</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="financiamento-modal">
+        <div class="financiamento-content">
+          Tipologia: <br>
+          <input type="text" /> <br>
+
+          Area:<br>
+          <input id="n1" type="number" /> <br>
+
+          Idade:<br>
+          <input id="n2" type="number" /> <br> <br>
+
+          Garagem:
+          <select name="" id="n3">
+            <option value="1">sim</option>
+            <option value="2">não</option>
+          </select> <br> <br>
+
+          Proximidade de Transportes Públicos:
+          <select name="" id="n4"> <br>
+            <option value="1">sim</option>
+            <option value="2">não</option>
+          </select> <br> <br>
+
+          <button onclick="area1();area2();area3()">Calcular Área</button> <br> <br>
+
+          <li>Resultado (1200) - <a href="#" id="b1"></a></li><br>
+          <li>Resultado (2000) - <a href="#" id="b2"></a></li><br>
+          <li>Resultado (2500) - <a href="#" id="b3"></a></li><br>
+
+
+          <button onclick="apagar()">Financiamento</button> <br> <br>
+          <div id="container">
+            Montante total<br>
+            <input id="n5" type="number" /> <br> <br>
+
+            Entrada inicial<br>
+            <input id="n6" type="number" /> <br> <br>
+
+            Prazo<br>
+            <input id="n7" type="number" /> <br> <br>
+
+
+            <button onclick="main()">Financiar</button> <br> <br>
+
+
+            <div class="on">
+              <ul>
+                <li>Montante total - <a href="#" id="b4"></a></li><br>
+                <li>Valor do emprestimo - <a href="#" id="b5"></a></li><br>
+                <li>Taxa de juro global - <a href="#" id="b6"></a>%</li><br>
+                <li>Spread - <a href="#" id="b7"></a>%</li><br>
+                <li>Valor da entrada inicial - <a href="#" id="b8"></a></li><br>
+                <li>Valor mensal da prestação - <a href="#" id="b9"></a></li>
+              </ul>
+              <ul>
+                <li>Montante total - <a href="#" id="b10"></a></li><br>
+                <li>Valor do emprestimo - <a href="#" id="b11"></a></li><br>
+                <li>Taxa de juro global - <a href="#" id="b12"></a>%</li><br>
+                <li>Spread - <a href="#" id="b13"></a>%</li><br>
+                <li>Valor da entrada inicial - <a href="#" id="b14"></a></li><br>
+                <li>Valor mensal da prestação - <a href="#" id="b15"></a></li>
+
+              </ul>
+              <ul>
+                <li>Montante total - <a href="#" id="b16"></a></li><br>
+                <li>Valor do emprestimo - <a href="#" id="b17"></a></li><br>
+                <li>Taxa de juro global - <a href="#" id="b18"></a>%</li><br>
+                <li>Spread - <a href="#" id="b19"></a>%</li><br>
+                <li>Valor da entrada inicial - <a href="#" id="b20"></a></li><br>
+                <li>Valor mensal da prestação - <a href="#" id="b21"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -709,6 +788,53 @@
 
   <footer>
     <div class="wrapper">
+      <div class="link-section">
+        <div class="link-subpart">
+          <div>
+            <ul>
+              <li><a href="#">Comprar apartamento em Lisboa</a></li>
+              <li><a href="#">Arrendar apartamento em Lisboa</a></li>
+              <li><a href="#">Comprar apartamento no Porto</a></li>
+              <li><a href="#">Comprar moradia em Vila Nova de Gaia</a></li>
+              <li><a href="#">Comprar moradia em Sintra</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li><a href="#">Comprar escritório em Lisboa</a></li>
+              <li><a href="#">Comprar escritório no Porto</a></li>
+              <li><a href="#">Comprar loja no Porto</a></li>
+              <li><a href="#">Comprar armazém em Lisboa</a></li>
+              <li><a href="#">Comprar garagem no Porto</a></li>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="verticalbar"></div>
+        <div class="link-subpart">
+          <div>
+            <ul>
+              <li><a href="#">Terreno</a></li>
+              <li><a href="#">Armazém</a></li>
+              <li><a href="#">Terreno</a></li>
+              <li><a href="#">Terreno</a></li>
+              <li><a href="#">Loja IMÓVEL DE BANCO - FINANCIAMEN...</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li><a href="#">Terreno agrícola</a></li>
+              <li><a href="#">Moradia T4 em Palmela com vista para a...</a></li>
+              <li><a href="#">Venda de Lote com 942 m2, Fradelos, Vil...</a></li>
+              <li><a href="#">Moradia T2 - Aceitam-se Propostas</a></li>
+              <li><a href="#">Terreno c/ 850 m2 - Vila do Conde</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="footer-content">
         <img src="img/logo.png" alt="" class="logo">
         <div class="footer-links">
@@ -773,4 +899,5 @@
   <script src="app.js"></script>
   <script src="https://kit.fontawesome.com/cef357574f.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
