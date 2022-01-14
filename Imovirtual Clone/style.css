@@ -440,6 +440,10 @@ header {
 
 /* Financiamento */
 
+.open-financiamento-modal-button{
+  display: none;
+}
+
 .financiamento-modal{
   display: none;
   position: fixed;
@@ -456,9 +460,9 @@ header {
 .financiamento-content{
   padding:30px;
   background-color: white;
-  width:1200px;
+  width:70%;
   margin: 0 auto;
-  height: 600px;
+  height: 500px;
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -865,6 +869,11 @@ header {
   .highlight-item:nth-child(5),
   .highlight-item:nth-child(6) {
     display: block;
+  }
+
+  .open-financiamento-modal-button{
+    display: inline;
+    font-size: 80%;
   }
 
   .services__section {
