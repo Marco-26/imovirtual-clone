@@ -534,82 +534,86 @@
           </div>
         </div>
         <button class="ad__button highlight-grid-btn" type="button">Ver tudo</button>
-        <button class="ad__button highlight-grid-btn" type="button">Financiamento</button>
+        <button class="ad__button highlight-grid-btn open-financiamento-modal-button" type="button">Financiamento</button>
       </div>
     </section>
 
     <section>
       <div class="financiamento-modal">
-        <div class="financiamento-content">
-          Tipologia: <br>
-          <input type="text" /> <br>
+        <div class="financiamento-holder">
+          <div class="financiamento-content">
+            <div class="close-financiamento-div">
+              <button class="close-financiamento" type="button"><i class="fas fa-times"></i></button>
+            </div>
+            Tipologia: <br>
+            <input type="text" /> <br>
 
-          Area:<br>
-          <input id="n1" type="number" /> <br>
+            Area:<br>
+            <input id="n1" type="number" /> <br>
 
-          Idade:<br>
-          <input id="n2" type="number" /> <br> <br>
+            Idade:<br>
+            <input id="n2" type="number" /> <br> <br>
 
-          Garagem:
-          <select name="" id="n3">
-            <option value="1">sim</option>
-            <option value="2">não</option>
-          </select> <br> <br>
+            Garagem:
+            <select name="" id="n3">
+              <option value="1">sim</option>
+              <option value="2">não</option>
+            </select> <br> <br>
 
-          Proximidade de Transportes Públicos:
-          <select name="" id="n4"> <br>
-            <option value="1">sim</option>
-            <option value="2">não</option>
-          </select> <br> <br>
+            Proximidade de Transportes Públicos:
+            <select name="" id="n4"> <br>
+              <option value="1">sim</option>
+              <option value="2">não</option>
+            </select> <br> <br>
 
-          <button onclick="area1();area2();area3()">Calcular Área</button> <br> <br>
+            <button onclick="area1();area2();area3()" class="ad__button financiamento-buttons">Calcular Área</button> <br> <br>
 
-          <li>Resultado (1200) - <a href="#" id="b1"></a></li><br>
-          <li>Resultado (2000) - <a href="#" id="b2"></a></li><br>
-          <li>Resultado (2500) - <a href="#" id="b3"></a></li><br>
-
-
-          <button onclick="apagar()">Financiamento</button> <br> <br>
-          <div id="container">
-            Montante total<br>
-            <input id="n5" type="number" /> <br> <br>
-
-            Entrada inicial<br>
-            <input id="n6" type="number" /> <br> <br>
-
-            Prazo<br>
-            <input id="n7" type="number" /> <br> <br>
+            <li>Resultado (1200) - <a href="#" id="b1"></a></li><br>
+            <li>Resultado (2000) - <a href="#" id="b2"></a></li><br>
+            <li>Resultado (2500) - <a href="#" id="b3"></a></li><br>
 
 
-            <button onclick="main()">Financiar</button> <br> <br>
+            <button onclick="apagar()" class="ad__button financiamento-buttons">Financiamento</button> <br> <br>
+            <div id="financiamento-container">
+              
+              Montante total<br>
+              <input id="n5" type="number" /> <br> <br>
 
+              Entrada inicial<br>
+              <input id="n6" type="number" /> <br> <br>
 
-            <div class="on">
-              <ul>
-                <li>Montante total - <a href="#" id="b4"></a></li><br>
-                <li>Valor do emprestimo - <a href="#" id="b5"></a></li><br>
-                <li>Taxa de juro global - <a href="#" id="b6"></a>%</li><br>
-                <li>Spread - <a href="#" id="b7"></a>%</li><br>
-                <li>Valor da entrada inicial - <a href="#" id="b8"></a></li><br>
-                <li>Valor mensal da prestação - <a href="#" id="b9"></a></li>
-              </ul>
-              <ul>
-                <li>Montante total - <a href="#" id="b10"></a></li><br>
-                <li>Valor do emprestimo - <a href="#" id="b11"></a></li><br>
-                <li>Taxa de juro global - <a href="#" id="b12"></a>%</li><br>
-                <li>Spread - <a href="#" id="b13"></a>%</li><br>
-                <li>Valor da entrada inicial - <a href="#" id="b14"></a></li><br>
-                <li>Valor mensal da prestação - <a href="#" id="b15"></a></li>
+              Prazo<br>
+              <input id="n7" type="number" /> <br> <br>
 
-              </ul>
-              <ul>
-                <li>Montante total - <a href="#" id="b16"></a></li><br>
-                <li>Valor do emprestimo - <a href="#" id="b17"></a></li><br>
-                <li>Taxa de juro global - <a href="#" id="b18"></a>%</li><br>
-                <li>Spread - <a href="#" id="b19"></a>%</li><br>
-                <li>Valor da entrada inicial - <a href="#" id="b20"></a></li><br>
-                <li>Valor mensal da prestação - <a href="#" id="b21"></a></li>
-              </ul>
+              <button onclick="main()" class="ad__button financiamento-buttons">Financiar</button> <br> <br>
+
+              <div class="on">
+                <ul>
+                  <li>Montante total - <a href="#" id="b4"></a></li><br>
+                  <li>Valor do emprestimo - <a href="#" id="b5"></a></li><br>
+                  <li>Taxa de juro global - <a href="#" id="b6"></a>%</li><br>
+                  <li>Spread - <a href="#" id="b7"></a>%</li><br>
+                  <li>Valor da entrada inicial - <a href="#" id="b8"></a></li><br>
+                  <li>Valor mensal da prestação - <a href="#" id="b9"></a></li>
+                </ul>
+                <ul>
+                  <li>Montante total - <a href="#" id="b10"></a></li><br>
+                  <li>Valor do emprestimo - <a href="#" id="b11"></a></li><br>
+                  <li>Taxa de juro global - <a href="#" id="b12"></a>%</li><br>
+                  <li>Spread - <a href="#" id="b13"></a>%</li><br>
+                  <li>Valor da entrada inicial - <a href="#" id="b14"></a></li><br>
+                  <li>Valor mensal da prestação - <a href="#" id="b15"></a></li>
+
+                </ul>
+                <ul>
+                  <li>Montante total - <a href="#" id="b16"></a></li><br>
+                  <li>Valor do emprestimo - <a href="#" id="b17"></a></li><br>
+                  <li>Taxa de juro global - <a href="#" id="b18"></a>%</li><br>
+                  <li>Spread - <a href="#" id="b19"></a>%</li><br>
+                  <li>Valor da entrada inicial - <a href="#" id="b20"></a></li><br>
+                  <li>Valor mensal da prestação - <a href="#" id="b21"></a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -897,6 +901,7 @@
   </footer>
 
   <script src="app.js"></script>
+  <script src="financiamento.js"></script>
   <script src="https://kit.fontawesome.com/cef357574f.js" crossorigin="anonymous"></script>
 </body>
 
