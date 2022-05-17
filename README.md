@@ -1,2 +1,2 @@
-# imovirtual-clone
-Repositório do trabalho Técnologias WEB (Clone imovirtual)
+# Trabalho prático Tecnologias-Web
+Clone do website Imovirtual em HTML CSS JS.
